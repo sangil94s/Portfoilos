@@ -4,6 +4,7 @@ import './globals.css';
 import Footers from '@/components/Layout/Footer';
 import Headers from '@/components/Layout/Header';
 import ButtonGroup from '@/components/ButtonGroup/ButtonGroup';
+import { ThemeProvider } from '@/components/util/theme-provider';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -29,12 +30,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Headers />
-        {children}
-        <ButtonGroup />
-        <Footers />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Headers />
+          {children}
+          <ButtonGroup />
+          <Footers />
+        </ThemeProvider>
       </body>
     </html>
   );

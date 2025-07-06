@@ -22,6 +22,30 @@ export const metadata: Metadata = {
     default: 'Portfoilo',
   },
   description: 'Portfoilo - 가제목',
+  keywords: [
+    '프론트엔드',
+    '개발자',
+    '프론트엔드 개발자',
+    '포트폴리오',
+    'FE',
+    'BE',
+    'Frontend Developer',
+    'React',
+    'Express',
+    'GCP',
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'ko_KR',
+    url: 'https://www.fronthan.dev/',
+    title: 'XXX | Portfoilo',
+    description: 'Portfoilo-TEMP',
+    siteName: 'XXX | Portfoilo',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

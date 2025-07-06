@@ -1,23 +1,34 @@
+import Career from '@/components/Career/Career';
+import Introduce from '@/components/Introduce/Introduce';
+import ProjectCard from '@/components/Project/ProjectCard';
+import Back from '@/components/Skill/Back';
+import Front from '@/components/Skill/Front';
+import Tool from '@/components/Skill/Tool';
 export default function Home() {
   return (
-    <>
-      {/* 
-          1. 할 내용 작성
-          2. 반응형 - 모바일 - 아이폰 14 Promax
-          3. 반응형 - PC - FHD, QHD, 4K 해상도 제공
-          4. 다크 모드 추가?    
-          5. 위로가기 버튼 + 이력서 다운로드? + 메일 ?
-          6. 애니메이션 - 
-      */}
-      <section className="h-screen flex flex-col">
-        <h1 className="flex-1 text-center">1. 첫 자기소개 배치 부분</h1>
-        <h1 className="flex-1 text-center">2. 사용 기술 스택 부분 - FE, BE, GCP, Tools</h1>
-        <h1 className="flex-1 text-center">3. 회사 경력 소개 파트</h1>
-        <h1 className="flex-1 text-center">4. 회사 프로젝트 소개 파트 - 상세 페이지 이동</h1>
-        <h1 className="flex-1 text-center">
-          5. 기타 개인 사이드 프로젝트 소개 파트 - 상세 페이지 이동
-        </h1>
+    <section className="relative min-h-screen flex flex-col justify-center mx-auto">
+      <section className="relative w-full h-screen flex-1">
+        <div className="flex-2">
+          <h1 className="text-center text-2xl font-bold py-4">Introduce</h1>
+          <Introduce />
+        </div>
+        <div className="flex-2">
+          <h1 className="text-center text-2xl font-bold py-4">Skill</h1>
+          <div className="grid grid-cols-3 justify-items-center">
+            <Front />
+            <Back />
+            <Tool />
+          </div>
+        </div>
+        <div className="flex-2">
+          <h1 className="text-center text-2xl font-bold py-4">Career</h1>
+          <Career />
+        </div>
+        <div className="flex-2">
+          <h1 className="text-center text-2xl font-bold py-4">Project</h1>
+          <ProjectCard />
+        </div>
       </section>
-    </>
+    </section>
   );
 }

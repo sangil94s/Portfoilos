@@ -1,27 +1,16 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Footers from '@/components/Layout/Footer';
 import Headers from '@/components/Layout/Header';
 import ButtonGroup from '@/components/ButtonGroup/ButtonGroup';
 import { ThemeProvider } from '@/components/util/theme-provider';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
 export const metadata: Metadata = {
   title: {
-    template: '%s | Portfoilo',
-    default: 'Portfoilo',
+    template: '%s | Portfolio',
+    default: 'Portfolio',
   },
-  description: 'Portfoilo - 가제목',
+  description: 'Portfolio - 가제목',
   keywords: [
     '프론트엔드',
     '개발자',
@@ -38,9 +27,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: 'https://www.fronthan.dev/',
-    title: 'XXX | Portfoilo',
-    description: 'Portfoilo-TEMP',
-    siteName: 'XXX | Portfoilo',
+    title: 'XXX | Portfolio',
+    description: 'Portfolio-TEMP',
+    siteName: 'XXX | Portfolio',
   },
   robots: {
     index: true,
@@ -55,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className="relative flex min-h-screen flex-col mx-auto">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -63,7 +52,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Headers />
-          {children}
+          <main className="flex-1">{children}</main>
+
           <ButtonGroup />
           <Footers />
         </ThemeProvider>

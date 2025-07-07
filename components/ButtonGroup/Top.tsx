@@ -7,7 +7,7 @@ export default function Top() {
 
   return (
     <div className="p-3 cursor-pointer">
-      <ArrowBigUp onClick={scrollTop} />
+      <ArrowBigUp onClick={scrollTop} className="w-4 h-4 m-auto" />
     </div>
   );
 }

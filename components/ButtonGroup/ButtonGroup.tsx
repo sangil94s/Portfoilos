@@ -1,7 +1,7 @@
 // 위로가기 등 버튼이 여기에 Import 되는 역할
-import { FileDown } from 'lucide-react';
 import Top from './Top';
 import DarkMode from './DarkMode';
+import ResumeDownload from './ResumeDownload';
 
 export default function ButtonGroup() {
   return (
@@ -11,9 +11,9 @@ export default function ButtonGroup() {
           <DarkMode />
         </section>
 
-        <p className="p-3">
-          <FileDown />
-        </p>
+        <section>
+          <ResumeDownload />
+        </section>
 
         <section>
           <Top />

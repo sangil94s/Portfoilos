@@ -9,7 +9,6 @@ export default function Home() {
     <>
       <section className="max-w-screen-xl mx-auto px-6">
         <div className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-center text-2xl font-bold py-4">Introduce</h1>
           <Introduce />
         </div>
         <div className="min-h-screen flex flex-col justify-center">

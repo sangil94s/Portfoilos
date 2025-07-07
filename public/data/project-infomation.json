@@ -1,0 +1,40 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "title": "AFO",
+      "date": "2023.03 - 2023.09 (약 6개월)",
+      "teamcount": "7명",
+      "description": "레거시 기계 업그레이드와 동일 시기에 React로 백오피스 재구축하며 UX 개선을 병행하는 프로젝트",
+      "tags": ["회사 프로젝트", "Frontend", "Backend", "React", "Express", "GCP"],
+      "image": "/project/afo-logo.png"
+    },
+    {
+      "id": 2,
+      "title": "Compact Machine",
+      "date": "2024.01 - 2025.03 (약 1년 2개월)",
+      "teamcount": "7명",
+      "description": "전국 180개 대리점의 생산량/위치 등 정보를 그래프와 표 등으로 내부 부서가 조회하는 백오피스 프로젝트",
+      "tags": ["회사 프로젝트", "Frontend", "Backend", "React", "Express", "GCP"],
+      "image": "/project/compact-login.png"
+    },
+    {
+      "id": 3,
+      "title": "Steamrader",
+      "date": "2025.04 - 2025.05 (약 1개월)",
+      "teamcount": "1인 개인 프로젝트",
+      "description": "미 사용한 Next.js App Router로 학습 목적 개발, Express로 백엔드를 분리한 기존 방식과 달리 Next.js로 프론트엔드와 백엔드 모두 개발하며 Steam의 API로 할인 게임 리스트를 제공하는 프로젝트",
+      "tags": ["개인 프로젝트", "Frontend", "Backend", "React", "Express", "GCP"],
+      "image": "/project/steamrader-main.png"
+    },
+    {
+      "id": 4,
+      "title": "Portfolio",
+      "date": "2025.07 - 2025.07",
+      "teamcount": "1인 개인 프로젝트",
+      "description": "포트폴리오 프로젝트",
+      "tags": ["개인 프로젝트", "Frontend", "Backend", "React", "Express", "GCP"],
+      "image": "/project/temp.jpg"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ export default function Back() {
           {data.skills?.map((item: SkillType) => (
             <section
               key={item.id}
-              className="border border-slate-300 rounded-md m-2 w-full max-w-sm hover:bg-gray-100 hover:shadow-md transition-all duration-200"
+              className="border-y-4 border-x-2 border-y-green-400 border-x-green-200 rounded-xs m-2 w-full max-w-sm hover:bg-gray-100 hover:shadow-md transition-all duration-200"
             >
               <div className="flex flx-row m-2">
                 <Image

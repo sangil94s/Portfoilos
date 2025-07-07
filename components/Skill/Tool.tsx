@@ -11,7 +11,7 @@ export default function Tool() {
           {data.skills?.map((item: SkillType) => (
             <section
               key={item.id}
-              className="border border-slate-300 rounded-md w-full max-w-sm m-2 hover:bg-gray-100 hover:shadow-md transition-all duration-200"
+              className="border-y-4 border-x-2 border-y-orange-400 border-x-orange-200 rounded-xs w-full max-w-sm m-2 hover:bg-gray-100 hover:shadow-md transition-all duration-200"
             >
               <div className="flex flx-row m-2">
                 <Image

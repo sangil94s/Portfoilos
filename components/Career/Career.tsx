@@ -2,8 +2,6 @@ import Image from 'next/image';
 import data from '../../public/data/work-infomation.json';
 // 간단하게 회사 언급 + 핵심적인 성과
 export default function Career() {
-  // console.log(data)
-  console.log(data?.companytitle);
   return (
     <>
       <div className="w-full grid grid-cols-1 justify-items-center lg:grid-cols-2">
@@ -23,7 +21,7 @@ export default function Career() {
         <section className="w-full lg:w-5/12 flex justify-center">
           <Image
             src={data?.companylogo}
-            alt="대상혁"
+            alt="회사로고"
             width={300}
             height={300}
             className="rounded-full"

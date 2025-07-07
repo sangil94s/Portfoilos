@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Career() {
   return (
     <>
-      <div className="w-full grid grid-cols-2 justify-items-center">
+      <div className="w-full grid grid-cols-1 justify-items-center lg:grid-cols-2">
         <section className="w-12/12">
           <h4 className="py-4 text-xl font-bold">회사 명</h4>
           <p className="text-base text-slate-400">핵심 성과 배치 지역</p>

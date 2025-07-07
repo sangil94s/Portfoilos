@@ -12,7 +12,7 @@ export default function Home() {
           <Introduce />
         </div>
         <div className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-center text-2xl font-bold py-4">Skill</h1>
+          <h1 className="text-center text-2xl font-bold py-4">Tech Skill</h1>
           <div className="flex flex-col justify-center">
             <Front />
             <Back />

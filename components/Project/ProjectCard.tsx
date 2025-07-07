@@ -25,21 +25,21 @@ export default function ProjectCard() {
           <Image
             src={item.image}
             alt="Project main image"
-            width={250}
+            width={260}
             height={20}
             className="rounded-md object-contain m-auto"
           />
           <CardHeader>
             <CardTitle>{item.title}</CardTitle>
-            <CardDescription>기간 : {item.date}</CardDescription>
-            <CardDescription>인원 : {item.teamcount}</CardDescription>
+            <CardDescription>{item.date}</CardDescription>
+            <CardDescription>{item.teamcount}</CardDescription>
           </CardHeader>
           <CardContent>
             <p>{item.description}</p>
           </CardContent>
-          <CardFooter className="grid grid-cols-3 justify-items-center gap-2">
+          <CardFooter className="grid grid-cols-4 justify-items-center gap-2">
             {item?.tags.map((tag, idx) => (
-              <Badge key={idx} variant="secondary" className="mx-1 font-bold">
+              <Badge key={idx} variant="secondary" className="font-bold">
                 {tag}
               </Badge>
             ))}

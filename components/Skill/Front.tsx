@@ -7,7 +7,7 @@ export default function Front() {
   return (
     <>
       <div>
-        <h1 className="text-center text-xl font-bold py-2">Frontend</h1>
+        <h1 className="text-center text-xl font-bold py-4">Frontend</h1>
         <div className="grid grid-cols-1 gap-2 justify-items-center lg:grid-cols-4">
           {data.skills?.map((item: SkillType) => (
             <section

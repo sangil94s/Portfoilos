@@ -1,0 +1,39 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Express",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/express.png"
+    },
+    {
+      "id": 2,
+      "title": "Prisma",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/prisma.png"
+    },
+    {
+      "id": 3,
+      "title": "Supabase",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/supabases.png"
+    },
+    {
+      "id": 4,
+      "title": "GCP",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/gcp.png"
+    },
+    {
+      "id": 5,
+      "title": "MySQL",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/mysql.png"
+    }
+  ]
+}

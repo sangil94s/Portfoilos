@@ -5,7 +5,7 @@ export default function Career() {
   return (
     <>
       <div className="w-full grid grid-cols-1 justify-items-center lg:grid-cols-2">
-        <section className="w-12/12">
+        <section className="w-full lg:w-6/12">
           <h4 className="py-4 text-xl font-bold">회사 명</h4>
           <p className="text-base text-slate-400">핵심 성과 배치 지역</p>
           <ul className="p-6 list-disc list-inside font-bold">
@@ -15,7 +15,7 @@ export default function Career() {
           </ul>
         </section>
 
-        <section className="w-3/12">
+        <section className="w-full lg:w-6/12 flex justify-center">
           <Image src={'/dae.webp'} alt="대상혁" width={300} height={300} className="rounded-full" />
         </section>
       </div>

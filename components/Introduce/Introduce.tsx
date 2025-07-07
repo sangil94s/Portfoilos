@@ -5,7 +5,7 @@ import Typewriter from 'typewriter-effect';
 export default function Introduce() {
   return (
     <section className="flex flex-col justify-center items-center">
-      <h1 className="text-3xl font-bold py-4">
+      <h1 className="text-xl font-bold py-4 lg:text-3xl">
         <span className="inline-block text-red-500">
           <Typewriter
             options={{

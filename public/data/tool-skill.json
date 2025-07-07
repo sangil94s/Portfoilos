@@ -1,0 +1,25 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Vercel",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/vercel.svg"
+    },
+    {
+      "id": 2,
+      "title": "Github",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/github.png"
+    },
+    {
+      "id": 3,
+      "title": "Notion",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/notion.png"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "React",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/react.png"
+    },
+    {
+      "id": 2,
+      "title": "Next.js App Router",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/next.png"
+    },
+    {
+      "id": 3,
+      "title": "Typescript",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/ts.png"
+    },
+    {
+      "id": 4,
+      "title": "TailwindCSS",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/tailwindcss.png"
+    },
+    {
+      "id": 5,
+      "title": "Styled-Component",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/styled-component.png"
+    },
+    {
+      "id": 6,
+      "title": "Zustand",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/zustand.png"
+    },
+    {
+      "id": 7,
+      "title": "React-Hook-Form",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/react-hook-form.png"
+    },
+    {
+      "id": 8,
+      "title": "Tanstack/react-query",
+      "description": "1111",
+      "descriptiontwo": "1111",
+      "image": "/skill/react-query.png"
+    }
+  ]
+}

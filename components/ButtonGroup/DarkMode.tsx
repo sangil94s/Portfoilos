@@ -20,7 +20,13 @@ export default function DarkMode() {
         checked={theme === 'dark'}
         onCheckedChange={values => setTheme(values ? 'dark' : 'light')}
       />
-      <span>{theme === 'dark' ? <Moon /> : <Sun />}</span>
+      <span>
+        {theme === 'dark' ? (
+          <Moon className="w-4 h-4 m-auto" />
+        ) : (
+          <Sun className="w-4 h-4 m-auto" />
+        )}
+      </span>
     </div>
   );
 }

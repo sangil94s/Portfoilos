@@ -8,7 +8,7 @@ export default function Back() {
       <div className="mx-2">
         <h1 className="text-center text-xl font-bold py-2">Backend</h1>
         <div className="grid grid-cols-4 gap-2 justify-items-center">
-          <section className="border border-slate-300 rounded-md m-2 w-full">
+          <section className="border border-slate-300 rounded-md m-2 w-full hover:bg-gray-100 hover:shadow-md transition-all duration-200">
             <div className="flex flx-row m-2">
               <Image
                 src={'/dae.webp'}

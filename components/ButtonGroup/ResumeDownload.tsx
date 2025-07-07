@@ -6,7 +6,7 @@ export default function ResumeDownload() {
     <>
       <div className="p-3 cursor-pointer">
         <a href="/resume.pdf" download>
-          <FileDown />
+          <FileDown className="w-4 h-4 m-auto" />
         </a>
       </div>
     </>

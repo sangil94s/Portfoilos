@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 export default function ProjectCard() {
   return (
     <div className="grid grid-cols-1 m-2 gap-4 justify-items-center lg:grid-cols-4">
-      <Card className="w-full">
+      <Card className="cursor-pointer w-full hover:bg-gray-100 hover:shadow-md transition-all duration-200">
         <Image
           src={'/dae.webp'}
           alt="대상혁"
@@ -43,7 +43,7 @@ export default function ProjectCard() {
           </Badge>
         </CardFooter>
       </Card>
-      <Card className="w-full">
+      <Card className="cursor-pointer w-full hover:bg-gray-100 hover:shadow-md transition-all duration-200">
         <Image
           src={'/dae.webp'}
           alt="대상혁"
@@ -81,7 +81,7 @@ export default function ProjectCard() {
           </Badge>
         </CardFooter>
       </Card>
-      <Card className="w-full">
+      <Card className="cursor-pointer w-full hover:bg-gray-100 hover:shadow-md transition-all duration-200">
         <Image
           src={'/dae.webp'}
           alt="대상혁"
@@ -116,7 +116,7 @@ export default function ProjectCard() {
           </Badge>
         </CardFooter>
       </Card>
-      <Card className="w-full">
+      <Card className="cursor-pointer w-full hover:bg-gray-100 hover:shadow-md transition-all duration-200">
         <Image
           src={'/dae.webp'}
           alt="대상혁"

@@ -20,7 +20,7 @@ export default function Front() {
                   alt="Skill Image"
                   width={40}
                   height={40}
-                  className="rounded-full object-contain"
+                  className="rounded-md object-contain"
                 />
                 <h1 className="py-4 px-2 font-bold">{item.title}</h1>
               </div>

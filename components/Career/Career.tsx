@@ -4,8 +4,8 @@ import data from '../../public/data/work-infomation.json';
 export default function Career() {
   return (
     <>
-      <div className="flex p-6">
-        <section className="flex-shrink-0 border-r-2 border-slate-200">
+      <div className="flex flex-col md:flex-row p-6">
+        <section className="flex-shrink-0 border-b-2 md:border-b-0 md:border-r-2 border-slate-200">
           <Image
             src={data?.companylogo}
             alt="회사로고"
@@ -15,7 +15,7 @@ export default function Career() {
           />
         </section>
 
-        <section className="w-full mx-4">
+        <section className="w-full md:mx-4">
           <h4 className="py-3 text-xl font-bold">{data?.companytitle}</h4>
           <p className="py-2 text-xs text-slate-400 font-bold">{data?.companydate}</p>
           <p className="text-xs text-slate-400 font-bold">{data?.companyposition}</p>

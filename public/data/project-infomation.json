@@ -6,16 +6,16 @@
       "date": "2023.03 - 2023.09 (약 6개월)",
       "teamcount": "7명 회사 프로젝트",
       "description": "React로 백오피스 재구축하며 UX 개선을 병행하는 프로젝트",
-      "tags": ["회사", "React", "Express", "GCP"],
+      "techskills": "React, Typescript, TailwindCSS, Express, MySQL, GCP",
       "image": "/project/afo-logo.png"
     },
     {
       "id": 2,
-      "title": "Compact Machine",
+      "title": "Compact-Machine",
       "date": "2024.01 - 2025.03 (약 1년 2개월)",
       "teamcount": "7명 회사 프로젝트",
       "description": "전국 대리점의 정보를 내부 부서가 조회하는 백오피스 프로젝트",
-      "tags": ["회사", "React", "Express", "GCP"],
+      "techskills": "React, Typescript, TailwindCSS, Tanstack/React-Query, React-Hook-Form, Express, MySQL, GCP",
       "image": "/project/compact-login.png"
     },
     {
@@ -24,7 +24,7 @@
       "date": "2025.04 - 2025.05 (약 1개월)",
       "teamcount": "1인 개인 프로젝트",
       "description": "Next.js App Router 학습 목적, Steam의 API로 할인 게임 리스트를 제공하는 프로젝트",
-      "tags": ["개인", "Next.js", "Prisma", "Supabase"],
+      "techskills": "Next.js App Router, Typescript, TailwindCSS, Supabase, Vercel",
       "image": "/project/steamrader-main.png"
     },
     {
@@ -33,7 +33,7 @@
       "date": "2025.07 - 2025.07",
       "teamcount": "1인 개인 프로젝트",
       "description": "포트폴리오 프로젝트",
-      "tags": ["개인", "Next.js", "TailwindCSS"],
+      "techskills": "Next.js App Router, Typescript, TailwindCSS, Vercel",
       "image": "/project/temp.jpg"
     }
   ]

@@ -1,4 +1,5 @@
 import Career from '@/components/Career/Career';
+import CoreCapabilities from '@/components/ETC/CoreCapabilities';
 import Introduce from '@/components/Introduce/Introduce';
 import ProjectCard from '@/components/Project/ProjectCard';
 import Back from '@/components/Skill/Back';
@@ -10,10 +11,15 @@ export default function Home() {
   return (
     <>
       <section className="max-w-screen-xl mx-auto px-6">
-        <div className="min-h-screen flex flex-col justify-center border-b-2 border-slate-300">
+        <div className="min-h-screen flex flex-col justify-center">
           <Introduce />
         </div>
-        <div className="min-h-screen flex flex-col justify-center border-b-2 border-slate-300">
+        <div className="min-h-screen flex flex-col justify-center">
+          <FadeInSection>
+            <CoreCapabilities />
+          </FadeInSection>
+        </div>
+        <div className="min-h-screen flex flex-col justify-center">
           <h1 id="skill" className="text-center text-xl font-bold py-4 lg:text-4xl">
             SKILLS
           </h1>
@@ -27,12 +33,9 @@ export default function Home() {
             <FadeInSection>
               <Tool />
             </FadeInSection>
-            <p className="text-center text-red-600 font-bold py-4">
-              임시 : GCP, Vercel Devops로 분리 고려.
-            </p>
           </div>
         </div>
-        <div className="min-h-screen flex flex-col justify-center border-b-2 border-slate-300">
+        <div className="min-h-screen flex flex-col justify-center">
           <h1 id="career" className="text-center text-xl font-bold py-4 lg:text-4xl">
             CAREER
           </h1>

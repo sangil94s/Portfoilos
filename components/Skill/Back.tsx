@@ -7,7 +7,7 @@ export default function Back() {
     <>
       <div className="mx-2">
         <h1 className="text-center text-xl font-bold py-4">Backend</h1>
-        <div className="grid grid-cols-1 gap-4 justify-items-center lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 justify-items-center lg:grid-cols-4">
           {data.skills?.map((item: SkillType) => (
             <section
               key={item.id}

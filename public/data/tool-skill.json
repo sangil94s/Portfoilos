@@ -9,17 +9,10 @@
     },
     {
       "id": 2,
-      "title": "Github",
+      "title": "GCP",
       "description": "1111",
       "descriptiontwo": "1111",
-      "image": "/skill/github.png"
-    },
-    {
-      "id": 3,
-      "title": "Notion",
-      "description": "1111",
-      "descriptiontwo": "1111",
-      "image": "/skill/notion.png"
+      "image": "/skill/gcp.png"
     }
   ]
 }

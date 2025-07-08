@@ -30,6 +30,12 @@ export const metadata: Metadata = {
     title: '프론트엔드 개발자 | Portfolio',
     description: 'Portfolio Website Project',
     siteName: '프론트엔드 개발자 | Portfolio',
+    images: {
+      url: 'https://www.fronthan.dev/blacks.png',
+      width: 600,
+      height: 600,
+      alt: '임시 대표 이미지',
+    },
   },
   robots: {
     index: true,

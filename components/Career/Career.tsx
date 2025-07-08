@@ -5,7 +5,7 @@ export default function Career() {
   return (
     <>
       <div className="flex p-6">
-      <section className="flex-shrink-0 border-r-2 border-slate-200">
+        <section className="flex-shrink-0 border-r-2 border-slate-200">
           <Image
             src={data?.companylogo}
             alt="회사로고"

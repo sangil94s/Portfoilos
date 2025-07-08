@@ -14,7 +14,9 @@ export default function Home() {
           <Introduce />
         </div>
         <div className="min-h-screen flex flex-col justify-center border-b-2 border-slate-300">
-          <h1 className="text-center text-xl font-bold py-4 lg:text-4xl">SKILLS</h1>
+          <h1 id="skill" className="text-center text-xl font-bold py-4 lg:text-4xl">
+            SKILLS
+          </h1>
           <div className="flex flex-col justify-center">
             <FadeInSection>
               <Front />
@@ -31,13 +33,17 @@ export default function Home() {
           </div>
         </div>
         <div className="min-h-screen flex flex-col justify-center border-b-2 border-slate-300">
-          <h1 className="text-center text-xl font-bold py-4 lg:text-4xl">CAREER</h1>
+          <h1 id="career" className="text-center text-xl font-bold py-4 lg:text-4xl">
+            CAREER
+          </h1>
           <FadeInSection>
             <Career />
           </FadeInSection>
         </div>
         <div className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-center text-xl font-bold py-4 lg:text-4xl">PROJECT</h1>
+          <h1 id="project" className="text-center text-xl font-bold py-4 lg:text-4xl">
+            PROJECT
+          </h1>
           <p className="text-center text-base font-bold py-2">
             현재 까지 진행한 회사 프로젝트 또는 개인 프로젝트 입니다.
           </p>

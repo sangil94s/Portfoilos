@@ -1,0 +1,14 @@
+import { Button } from '@/components/ui/button';
+import { Mail } from 'lucide-react';
+
+export default function MailButton() {
+  return (
+    <>
+      <Button variant="outline">
+        <a href="mailto:bsc7417@gmail.com" className="flex items-center">
+          <Mail className="mx-1" /> 메일 보내기
+        </a>
+      </Button>
+    </>
+  );
+}

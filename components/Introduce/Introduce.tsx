@@ -1,11 +1,14 @@
 // 자기소개 파트
 'use client';
 import Typewriter from 'typewriter-effect';
+import ResumeDownload from './Button/ResumeDownload';
+import GithubLinkButton from './Button/GithubLinkButton';
+import MailButton from './Button/MailButton';
 
 export default function Introduce() {
   return (
     <section className="flex flex-col justify-center items-center">
-      <h1 className="text-xl font-bold py-4 lg:text-3xl">
+      <h1 className="text-xl font-bold py-4 lg:text-5xl">
         <span className="inline-block text-red-500">
           <Typewriter
             options={{
@@ -22,6 +25,11 @@ export default function Introduce() {
       <p className="font-bold py-2">항목 1 - XXXXXXX</p>
       <p className="font-bold py-2">항목 2 - XXXXXXX</p>
       <p className="font-bold py-2">항목 3 - XXXXXXX</p>
+      <div className="grid grid-cols-3 justify-items-center gap-2">
+        <ResumeDownload />
+        <GithubLinkButton />
+        <MailButton />
+      </div>
     </section>
   );
 }

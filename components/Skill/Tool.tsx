@@ -7,7 +7,7 @@ export default function Tool() {
     <>
       <div>
         <h1 className="text-center text-xl font-bold py-4">Tool</h1>
-        <div className="grid grid-cols-1 gap-2 justify-items-center lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 justify-items-center lg:grid-cols-3">
           {data.skills?.map((item: SkillType) => (
             <section
               key={item.id}

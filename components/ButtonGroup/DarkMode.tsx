@@ -16,6 +16,7 @@ export default function DarkMode() {
   return (
     <div className="p-2">
       <Switch
+        aria-label="Toggle dark mode"
         className="my-1 cursor-pointer"
         checked={theme === 'dark'}
         onCheckedChange={values => setTheme(values ? 'dark' : 'light')}

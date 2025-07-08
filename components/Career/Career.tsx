@@ -4,8 +4,18 @@ import data from '../../public/data/work-infomation.json';
 export default function Career() {
   return (
     <>
-      <div className="w-full grid grid-cols-1 justify-items-center lg:grid-cols-2">
-        <section className="w-full">
+      <div className="flex p-6">
+        <section className="flex-shrink-0 border-r-2 border-slate-200">
+          <Image
+            src={data?.companylogo}
+            alt="회사로고"
+            width={140}
+            height={140}
+            className="rounded-full m-2"
+          />
+        </section>
+
+        <section className="w-full mx-4">
           <h4 className="py-3 text-xl font-bold">{data?.companytitle}</h4>
           <p className="py-2 text-xs text-slate-400 font-bold">{data?.companydate}</p>
           <p className="text-xs text-slate-400 font-bold">{data?.companyposition}</p>
@@ -16,16 +26,6 @@ export default function Career() {
             <li className="text-sm py-4">{data?.performancefour}</li>
             <li className="text-sm py-4">{data?.performancefive}</li>
           </ul>
-        </section>
-
-        <section className="w-full lg:w-4/12 flex justify-center">
-          <Image
-            src={data?.companylogo}
-            alt="회사로고"
-            width={300}
-            height={300}
-            className="rounded-full"
-          />
         </section>
       </div>
     </>

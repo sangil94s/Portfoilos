@@ -1,0 +1,22 @@
+{
+  "AFO": {
+    "detail": "AFO 프로젝트는 UX를 개선하며 백오피스를 재구축한 프로젝트입니다...",
+    "features": ["로그인 기능", "대시보드", "사용자 관리"],
+    "github": "https://github.com/your-afo-link"
+  },
+  "Compact-Machine": {
+    "detail": "대리점 정보 조회 백오피스입니다...",
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
+    "github": "https://github.com/your-compact-link"
+  },
+  "Steamrader": {
+    "detail": "대리점 정보 조회 백오피스입니다...",
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
+    "github": "https://github.com/your-compact-link"
+  },
+  "Portfolio": {
+    "detail": "대리점 정보 조회 백오피스입니다...",
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
+    "github": "https://github.com/your-compact-link"
+  }
+}

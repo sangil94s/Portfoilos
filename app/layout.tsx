@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | Portfolio',
     default: 'Portfolio',
   },
-  description: 'Portfolio - 가제목',
+  description: 'Portfolio Website Project',
   keywords: [
     '프론트엔드',
     '개발자',
@@ -27,9 +27,15 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: 'https://www.fronthan.dev/',
-    title: 'XXX | Portfolio',
-    description: 'Portfolio-TEMP',
-    siteName: 'XXX | Portfolio',
+    title: '프론트엔드 개발자 | Portfolio',
+    description: 'Portfolio Website Project',
+    siteName: '프론트엔드 개발자 | Portfolio',
+    images: {
+      url: 'https://www.fronthan.dev/blacks.png',
+      width: 600,
+      height: 600,
+      alt: '임시 대표 이미지',
+    },
   },
   robots: {
     index: true,

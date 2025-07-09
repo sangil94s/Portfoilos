@@ -10,16 +10,16 @@ export default function Headers() {
 
         <section className="flex gap-6 m-3">
           <Link href="#core" className="font-bold cursor-pointer">
-            Core
+            핵심 역량
           </Link>
           <Link href="#skill" className="font-bold cursor-pointer">
-            Skill
+            사용 기술
           </Link>
           <Link href="#career" className="font-bold cursor-pointer">
-            Career
+            경력
           </Link>
           <Link href="#project" className="font-bold cursor-pointer">
-            Project
+            프로젝트
           </Link>
         </section>
       </header>

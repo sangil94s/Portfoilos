@@ -8,7 +8,7 @@ import { ThemeProvider } from '@/components/util/theme-provider';
 export const metadata: Metadata = {
   title: {
     template: '%s | Frontend Portfolio',
-    default: 'Portfolio',
+    default: '한상일 | Frontend Portfolio',
   },
   description: 'Portfolio Website Project',
   keywords: [

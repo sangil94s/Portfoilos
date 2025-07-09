@@ -10,7 +10,7 @@ interface Project {
   date: string;
   teamcount: string;
   description: string;
-  techskills: string;
+  parts: string;
   image: string;
 }
 
@@ -19,7 +19,7 @@ export default function ProjectCard() {
     <div className="grid grid-cols-1 m-2 gap-4 justify-items-center lg:grid-cols-2">
       {data?.project.map((item: Project) => (
         <Link key={item.id} href={`/project/${item.title}`}>
-          <Card className="cursor-pointer lg:w-[550px] lg:h-[400px] w-full max-w-sm hover:bg-gray-100 hover:shadow-md transition-all duration-200">
+          <Card className="cursor-pointer lg:w-[650px] lg:h-[400px] w-full max-w-sm hover:bg-gray-100 hover:shadow-md transition-all duration-200">
             <Image
               src={item.image}
               alt="Project main image"
@@ -28,12 +28,10 @@ export default function ProjectCard() {
               className="rounded-md object-contain m-auto"
             />
             <CardHeader>
-              <CardTitle>{item.title}</CardTitle>
-              <CardDescription>{item.date}</CardDescription>
-              <CardDescription>{item.teamcount}</CardDescription>
-              <CardDescription className="bg-blue-300 text-white text-xs font-bold rounded-md p-1">
-                {item.techskills}
-              </CardDescription>
+              <CardTitle>프로젝트 명 : {item.title}</CardTitle>
+              <CardDescription className="py-1">진행 기간 : {item.date}</CardDescription>
+              <CardDescription className="py-1">진행 인원 : {item.teamcount}</CardDescription>
+              <CardDescription className="py-1">담당 부분 : {item.parts}</CardDescription>
             </CardHeader>
             <CardContent>
               <p>{item.description}</p>

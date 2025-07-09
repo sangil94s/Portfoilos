@@ -5,7 +5,7 @@ export default function ResumeDownload() {
   return (
     <>
       <Button variant="outline">
-        <a href="/resume.pdf" download className="flex items-center gap-2">
+        <a href="/resume.pdf" download className="flex items-center gap-2 font-bold">
           <FileDown /> 이력서 다운로드
         </a>
       </Button>

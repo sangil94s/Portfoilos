@@ -19,7 +19,7 @@ export default function ProjectCard() {
     <div className="grid grid-cols-1 m-2 gap-4 justify-items-center lg:grid-cols-2">
       {data?.project.map((item: Project) => (
         <Link key={item.id} href={`/project/${item.title}`}>
-          <Card className="cursor-pointer lg:w-[650px] lg:h-[400px] w-full max-w-sm hover:bg-gray-100 hover:shadow-md transition-all duration-200">
+          <Card className="group relative cursor-pointer p-4 lg:w-[650px] lg:h-[400px] w-full max-w-sm hover:bg-gray-400 hover:shadow-md transition-all duration-200">
             <Image
               src={item.image}
               alt="Project main image"
@@ -27,6 +27,9 @@ export default function ProjectCard() {
               height={20}
               className="rounded-md object-contain m-auto"
             />
+             <h4 className="absolute top-40 right-16 text-xl text-center text-blue-600 font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              상세 페이지 바로가기
+            </h4>
             <CardHeader>
               <CardTitle>프로젝트 명 : {item.title}</CardTitle>
               <CardDescription className="py-1">진행 기간 : {item.date}</CardDescription>
@@ -36,7 +39,9 @@ export default function ProjectCard() {
             <CardContent>
               <p>{item.description}</p>
             </CardContent>
+             
           </Card>
+        
         </Link>
       ))}
     </div>

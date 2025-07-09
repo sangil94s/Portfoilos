@@ -1,12 +1,12 @@
 {
-  "companytitle": "홍길동",
+  "companytitle": "킴스인더스트리",
   "companysmalldescription": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다",
   "companydate": "2022.12 - 2025.03 [약 2년 4개월]",
   "companyposition": "R&D 소프트웨어 2팀 프론트엔드 개발자",
   "performanceone": "프론트엔드 기술 스택을 EJS → React로 전환 주도, 이후 4개 프로젝트에서 React로 진행하며 정착",
-  "performancetwo": "레거시 프로젝트 (APEHEX 크롬 Performance 탭 기준 LCP 평균 30초 등 성능과 9개 Log 페이지 UX 미 통일을 이후 프로젝트에서 LCP 1초 이하, 5개 Log 페이지 UX를 통일하며 개선",
+  "performancetwo": "레거시 프로젝트 (크롬 Performance 탭 기준 LCP 평균 30초 + 9개 Log 페이지 UX 미 통일 → 이후 프로젝트에서 LCP 1초 이하, 5개 Log 페이지 UX를 통일) 개선",
   "performancethree": "디자인 가이드 (AI 파일)에 사용한 색상 정보가 없어 디자이너에게 추가 문의 필요 → 협의 후 사용한 색상에 대한 HEX 코드를 가이드에 추가하며 2개 프로젝트 진행",
   "performancefour": "모바일 반응형 UI 기준이 불명확한 기존 사례를 개선하고자 갤럭시 S20 Ultra 등 기준 기기를 먼저 제안, 협의 된 기기를 기준으로 3개 프로젝트의 모바일 반응형 진행.",
-  "performancefive": "API 문서 부재로 이슈가 발생한 걸 개선하고자, 협의 사항으로 Notion에 필수 값, 성공/실패 시 상태 코드와 응답 값 등을 PDF로 작성과 최신화 전담 하여 2개 프로젝트에서 개발팀 내부에 공유.",
+  "performancefive": "API 문서 부재로 이슈가 발생한 걸 개선하고자, 협의 사항으로 Notion에 필수 값, 상태 코드와 응답 값 등을 PDF로 작성과 최신화 전담 하여 2개 프로젝트에서 개발팀 내부에 공유.",
   "companylogo": "/work/logos.jpg"
 }

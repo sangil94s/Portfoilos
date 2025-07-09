@@ -9,6 +9,9 @@ export default function Headers() {
         </Link>
 
         <section className="flex gap-6 m-3">
+          <Link href="#core" className="font-bold cursor-pointer">
+            Core
+          </Link>
           <Link href="#skill" className="font-bold cursor-pointer">
             Skill
           </Link>

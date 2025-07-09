@@ -30,27 +30,20 @@
     },
     {
       "id": 5,
-      "title": "Styled-Component",
-      "description": "1111",
-      "descriptiontwo": "1111",
-      "image": "/skill/styled-component.png"
-    },
-    {
-      "id": 6,
       "title": "Zustand",
       "description": "1111",
       "descriptiontwo": "1111",
       "image": "/skill/zustand.png"
     },
     {
-      "id": 7,
+      "id": 6,
       "title": "React-Hook-Form",
       "description": "1111",
       "descriptiontwo": "1111",
       "image": "/skill/react-hook-form.png"
     },
     {
-      "id": 8,
+      "id": 7,
       "title": "Tanstack/react-query",
       "description": "1111",
       "descriptiontwo": "1111",

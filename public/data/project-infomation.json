@@ -5,8 +5,9 @@
       "title": "AFO",
       "date": "2023.03 - 2023.09 (약 6개월)",
       "teamcount": "7명 회사 프로젝트",
-      "description": "React로 백오피스 재구축하며 UX 개선을 병행하는 프로젝트",
+      "description": "기존 EJS를 React로 백오피스 재구축, 레거시의 UX 중 아쉬운 점을 병행하여 개선하는 프로젝트.",
       "techskills": "React, Typescript, TailwindCSS, Express, MySQL, GCP",
+      "parts": "유일한 서버와 프론트엔드 개발, GCP 배포 전담",
       "image": "/project/afo-logo.png"
     },
     {
@@ -14,8 +15,9 @@
       "title": "Compact-Machine",
       "date": "2024.01 - 2025.03 (약 1년 2개월)",
       "teamcount": "7명 회사 프로젝트",
-      "description": "전국 대리점의 정보를 내부 부서가 조회하는 백오피스 프로젝트",
+      "description": "국내 약 180개 대리점의 데이터를 내부 부서가 조회하는 백오피스 프로젝트",
       "techskills": "React, Typescript, TailwindCSS, Tanstack/React-Query, React-Hook-Form, Express, MySQL, GCP",
+      "parts": "유일한 서버와 프론트엔드 개발, GCP 배포 전담 ",
       "image": "/project/compact-login.png"
     },
     {
@@ -23,17 +25,19 @@
       "title": "Steamrader",
       "date": "2025.04 - 2025.05 (약 1개월)",
       "teamcount": "1인 개인 프로젝트",
-      "description": "Next.js App Router 학습 목적, Steam의 API로 할인 게임 리스트를 제공하는 프로젝트",
+      "description": "Next.js 학습 목적, Steam의 API로 15% 이상 할인하는 게임 리스트를 제공하는 프로젝트",
       "techskills": "Next.js App Router, Typescript, TailwindCSS, Supabase, Vercel",
+      "parts": "프로젝트 전수 진행",
       "image": "/project/steamrader-main.png"
     },
     {
       "id": 4,
       "title": "Portfolio",
-      "date": "2025.07 - 2025.07",
+      "date": "2025.07 - 2025.07 (1개월 이내)",
       "teamcount": "1인 개인 프로젝트",
-      "description": "포트폴리오 프로젝트",
+      "description": "Next.js + Typescirpt + TailwindCSS 로 기존 업무 내용을 정리하는 목적의 포트폴리오 프로젝트",
       "techskills": "Next.js App Router, Typescript, TailwindCSS, Vercel",
+      "parts": "프로젝트 전수 진행",
       "image": "/project/temp.jpg"
     }
   ]

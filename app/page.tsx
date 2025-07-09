@@ -15,6 +15,9 @@ export default function Home() {
           <Introduce />
         </div>
         <div className="min-h-screen flex flex-col justify-center">
+          <h1 id="core" className="text-center text-xl font-bold py-4 lg:text-4xl">
+            핵심 역량
+          </h1>
           <FadeInSection>
             <CoreCapabilities />
           </FadeInSection>

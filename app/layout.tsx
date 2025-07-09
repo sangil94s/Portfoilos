@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/util/theme-provider';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Portfolio',
+    template: '%s | Frontend Portfolio',
     default: 'Portfolio',
   },
   description: 'Portfolio Website Project',
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ko_KR',
     url: 'https://www.fronthan.dev/',
-    title: '프론트엔드 개발자 | Portfolio',
+    title: '한상일 | 프론트엔드 포트폴리오',
     description: 'Portfolio Website Project',
-    siteName: '프론트엔드 개발자 | Portfolio',
+    siteName: '한상일 | 프론트엔드 포트폴리오',
     images: {
       url: 'https://www.fronthan.dev/blacks.png',
       width: 600,

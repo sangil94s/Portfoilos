@@ -3,6 +3,7 @@
   "companysmalldescription": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다",
   "companydate": "2022.12 - 2025.03 [약 2년 4개월]",
   "companyposition": "R&D 소프트웨어 2팀 프론트엔드 개발자",
+  "companyInfo": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다.",
   "performanceone": "프론트엔드 기술 스택을 EJS → React로 전환 주도, 이후 4개 프로젝트에서 React로 진행하며 정착",
   "performancetwo": "레거시 프로젝트 (크롬 Performance 탭 기준 LCP 평균 30초 + 9개 Log 페이지 UX 미 통일 → 이후 프로젝트에서 LCP 1초 이하, 5개 Log 페이지 UX를 통일) 개선",
   "performancethree": "디자인 가이드 (AI 파일)에 사용한 색상 정보가 없어 디자이너에게 추가 문의 필요 → 협의 후 사용한 색상에 대한 HEX 코드를 가이드에 추가하며 2개 프로젝트 진행",

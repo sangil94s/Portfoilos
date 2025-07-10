@@ -3,7 +3,7 @@
 import Typewriter from 'typewriter-effect';
 import ResumeDownload from './Button/ResumeDownload';
 import MailButton from './Button/MailButton';
-
+// 추가 고려 - 좌측에 이미지?
 export default function Introduce() {
   return (
     <section className="flex flex-col justify-center items-center">

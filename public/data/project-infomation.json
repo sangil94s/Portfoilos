@@ -7,7 +7,7 @@
       "teamcount": "7명 회사 프로젝트",
       "description": "기존 EJS로 구축된 백오피스 서비스를 React로 재구축과 UX의 개선을 병행하는 프로젝트",
       "techskills": "React, Typescript, TailwindCSS, Express, MySQL, GCP",
-      "parts": "유일한 서버와 프론트엔드 개발, GCP 배포 전담",
+      "parts": "유일한 풀스택 개발, GCP 배포 전담",
       "image": "/project/afo-logo.png",
       "useSkillImage": [
         {
@@ -51,7 +51,7 @@
       "teamcount": "7명 회사 프로젝트",
       "description": "국내 약 180개 대리점의 생산 등 데이터를 내부 부서가 조회와 활용 목적의 백오피스 프로젝트",
       "techskills": "React, Typescript, TailwindCSS, Tanstack/React-Query, React-Hook-Form, Express, MySQL, GCP",
-      "parts": "유일한 서버와 프론트엔드 개발, GCP 배포 전담 ",
+      "parts": "유일한 풀스택 개발, GCP 배포 전담 ",
       "image": "/project/compact-login.png",
       "useSkillImage": [
         {

@@ -26,7 +26,7 @@ export default function ProjectCard() {
     <div className="grid grid-cols-1 m-2 gap-4 justify-items-center lg:grid-cols-2">
       {data?.project.map((item: Project) => (
         <Link key={item.id} href={`/project/${item.title}`}>
-          <Card className="group relative cursor-pointer p-4 lg:w-[650px] lg:h-[400px] w-full max-w-sm hover:bg-gray-400 hover:shadow-md transition-all duration-200">
+          <Card className="group relative cursor-pointer p-4 w-full max-w-sm lg:w-[650px] lg:h-[400px] hover:bg-gray-400 hover:shadow-md transition-all duration-200">
             <Image
               src={item.image}
               alt="Project main image"
@@ -41,9 +41,9 @@ export default function ProjectCard() {
             </h4>
             <CardHeader>
               <CardTitle>프로젝트 명 : {item.title}</CardTitle>
-              <CardDescription className="py-1">기간 : {item.date}</CardDescription>
-              <CardDescription className="py-1">인원 : {item.teamcount}</CardDescription>
-              <CardDescription className="py-1">담당 : {item.parts}</CardDescription>
+              <CardDescription className="py-1">기간: {item.date}</CardDescription>
+              <CardDescription className="py-1">인원: {item.teamcount}</CardDescription>
+              <CardDescription className="py-1">담당: {item.parts}</CardDescription>
               <CardDescription className="py-1 text-black">{item.description}</CardDescription>
               <div className="flex flex-row justify-center gap-2">
                 <h4 className="text-base font-bold">Skill: </h4>

@@ -2,9 +2,7 @@ import Career from '@/components/Career/Career';
 import CoreCapabilities from '@/components/ETC/CoreCapabilities';
 import Introduce from '@/components/Introduce/Introduce';
 import ProjectCard from '@/components/Project/ProjectCard';
-import Back from '@/components/Skill/Back';
-import Front from '@/components/Skill/Front';
-import Tool from '@/components/Skill/Tool';
+import SkillList from '@/components/Skill/SkillList';
 import FadeInSection from '@/components/util/FramerMotion/FadeIn';
 
 export default function Home() {
@@ -18,6 +16,9 @@ export default function Home() {
           <h1 id="core" className="text-center text-xl font-bold py-4 lg:text-4xl">
             핵심 역량
           </h1>
+          <h4 className="text-center font-bold py-2">
+            주도적으로 항상 문제 개선을 제안하고 해결을 추진합니다.
+          </h4>
           <FadeInSection>
             <CoreCapabilities />
           </FadeInSection>
@@ -26,15 +27,9 @@ export default function Home() {
           <h1 id="skill" className="text-center text-xl font-bold py-4 lg:text-4xl">
             사용 기술
           </h1>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center items-center">
             <FadeInSection>
-              <Front />
-            </FadeInSection>
-            <FadeInSection>
-              <Back />
-            </FadeInSection>
-            <FadeInSection>
-              <Tool />
+              <SkillList />
             </FadeInSection>
           </div>
         </div>

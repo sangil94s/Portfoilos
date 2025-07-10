@@ -1,0 +1,102 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Express",
+      "category": "Backend",
+      "isInterested": false,
+      "image": "/skill/express.png"
+    },
+    {
+      "id": 2,
+      "title": "Prisma",
+      "category": "Backend",
+      "isInterested": false,
+      "image": "/skill/prisma.png"
+    },
+    {
+      "id": 3,
+      "title": "Supabase",
+      "category": "Backend",
+      "isInterested": false,
+      "image": "/skill/supabases.png"
+    },
+    {
+      "id": 4,
+      "title": "MySQL",
+      "category": "Backend",
+      "isInterested": false,
+      "image": "/skill/mysql.png"
+    },
+    {
+      "id": 5,
+      "title": "Nest.js",
+      "category": "Backend",
+      "isInterested": true,
+      "image": "/skill/nest.png"
+    },
+    {
+      "id": 6,
+      "title": "Vercel",
+      "category": "Deploy",
+      "isInterested": false,
+      "image": "/skill/vercel.svg"
+    },
+    {
+      "id": 7,
+      "title": "GCP",
+      "category": "Deploy",
+      "isInterested": false,
+      "image": "/skill/gcp.png"
+    },
+    {
+      "id": 8,
+      "title": "React",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/react.png"
+    },
+    {
+      "id": 9,
+      "title": "Next.js App Router",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/next.png"
+    },
+    {
+      "id": 10,
+      "title": "Typescript",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/ts.png"
+    },
+    {
+      "id": 11,
+      "title": "TailwindCSS",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/tailwindcss.png"
+    },
+    {
+      "id": 12,
+      "title": "Zustand",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/zustand.png"
+    },
+    {
+      "id": 13,
+      "title": "React-Hook-Form",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/react-hook-form.png"
+    },
+    {
+      "id": 14,
+      "title": "Tanstack/react-query",
+      "category": "Frontend",
+      "isInterested": false,
+      "image": "/skill/react-query.png"
+    }
+  ]
+}

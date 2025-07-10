@@ -7,7 +7,7 @@ import MailButton from './Button/MailButton';
 export default function Introduce() {
   return (
     <section className="flex flex-col justify-center items-center">
-      <h1 className="text-xl font-bold py-4 lg:text-4xl">
+      <h1 className="text-xl font-bold py-4 lg:text-3xl">
         <span className="inline-block text-red-500">
           <Typewriter
             options={{

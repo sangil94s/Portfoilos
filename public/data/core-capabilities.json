@@ -3,25 +3,25 @@
     {
       "id": 1,
       "title": "구조 개선과 성능 최적화",
-      "subtitle": "레거시(APEHEX)의 문제점을 컴팩트머신에서 개선",
-      "description": "LCP 평균 30초 → 1초로 개선",
-      "descriptiontwo": "리소스 1,400개 → 50개로 개선",
-      "descriptionthree": "Lighthouse NO_FCP → 76점으로 개선"
+      "subtitle": "레거시(APEHEX)의 문제점을 이후 컴팩트머신에서 개선",
+      "description": "서비스를 개발하며 레거시 백오피스 성능을 측정하고 이후 프로젝트에서 개선",
+      "descriptiontwo": "EJS → React 변경 후 성능 최적화로 크롬 Performance LCP를 90% 이상 개선, Lighthouse를 NO_FCP → 76점으로 개선",
+      "descriptionthree": ""
     },
     {
       "id": 2,
       "title": "풀스택 개발 경험",
-      "subtitle": "회사에서 관련 사례입니다.",
-      "description": "React + Express + GCP 등으로 2개 프로젝트 배포와 도메인 연동.",
-      "descriptiontwo": "4개 프로젝트의 유일한 풀스택 담당",
+      "subtitle": "프론트엔드 개발과 Express, MySQL, GCP로 백엔드 개발 병행",
+      "description": "React + Express + GCP로 2개 프로젝트 개발과 배포 후 서비스 오픈",
+      "descriptiontwo": "4개 프로젝트의 유일한 풀스택으로 기획부터 배포 후 유지 보수까지 진행",
       "descriptionthree": ""
     },
     {
       "id": 3,
-      "title": "기술 스택 전환",
-      "subtitle": "회사에서 관련 사례입니다.",
-      "description": "EJS → React로 기술 스택 전환주도",
-      "descriptiontwo": "4개 프로젝트를 진행하며 React 정착",
+      "title": "협업과 개발 문화 개선",
+      "subtitle": "API 문서화 도입, 디자인 가이드 협의 후 수정 등 주도",
+      "description": "API 문서화 부재를 확인 후 문서화 제안, 팀과 협의 후 Notion으로 진행",
+      "descriptiontwo": "디자인 가이드에 사용 색상 정보가 부재, 디자이너와 협의 후 가이드에 HEX 코드 추가",
       "descriptionthree": ""
     }
   ]

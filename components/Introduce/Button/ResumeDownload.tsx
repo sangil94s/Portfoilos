@@ -4,7 +4,7 @@ import { FileDown } from 'lucide-react';
 export default function ResumeDownload() {
   return (
     <>
-      <Button variant="outline">
+      <Button variant="ghost">
         <a href="/resume.pdf" download className="flex items-center gap-2 font-bold">
           <FileDown /> 이력서 다운로드
         </a>

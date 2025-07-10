@@ -34,9 +34,9 @@ export default function ProjectCard() {
             </h4>
             <CardHeader>
               <CardTitle>프로젝트 명 : {item.title}</CardTitle>
-              <CardDescription className="py-1">진행 기간 : {item.date}</CardDescription>
-              <CardDescription className="py-1">진행 인원 : {item.teamcount}</CardDescription>
-              <CardDescription className="py-1">담당 부분 : {item.parts}</CardDescription>
+              <CardDescription className="py-1">기간 : {item.date}</CardDescription>
+              <CardDescription className="py-1">인원 : {item.teamcount}</CardDescription>
+              <CardDescription className="py-1">담당 : {item.parts}</CardDescription>
             </CardHeader>
             <CardContent>
               <p>{item.description}</p>

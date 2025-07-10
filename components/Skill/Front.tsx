@@ -7,7 +7,10 @@ export default function Front() {
   return (
     <>
       <div>
-        <h1 className="text-center text-xl font-bold py-4">Frontend</h1>
+        <h1 className="text-start text-xl font-bold py-4">Frontend</h1>
+        <p className="text-start text-sm text-slate-400 pb-2">
+          프로젝트를 진행하며 사용해 본 기술입니다
+        </p>
         <div className="grid grid-cols-1 gap-4 justify-items-center lg:grid-cols-4">
           {data.skills?.map((item: SkillType) => (
             <section
@@ -25,8 +28,8 @@ export default function Front() {
                 <h1 className="py-4 px-2 font-bold">{item.title}</h1>
               </div>
               <ul className="px-6 py-2 list-disc list-inside font-bold">
-                <li>{item.description}</li>
-                <li>{item.descriptiontwo}</li>
+                <li className="pb-2">{item.description}</li>
+                <li className="pb-2">{item.descriptiontwo}</li>
               </ul>
             </section>
           ))}

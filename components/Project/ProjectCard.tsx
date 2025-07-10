@@ -27,8 +27,10 @@ export default function ProjectCard() {
               height={20}
               className="rounded-md object-contain m-auto"
             />
-             <h4 className="absolute top-40 right-16 text-xl text-center text-blue-600 font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-              상세 페이지 바로가기
+            <h4 className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <span className="text-xl text-blue-600 font-bold border-2 border-blue-600 px-4 py-2 rounded-full bg-inherit backdrop-blur-sm">
+                상세 페이지 바로가기
+              </span>
             </h4>
             <CardHeader>
               <CardTitle>프로젝트 명 : {item.title}</CardTitle>
@@ -39,9 +41,7 @@ export default function ProjectCard() {
             <CardContent>
               <p>{item.description}</p>
             </CardContent>
-             
           </Card>
-        
         </Link>
       ))}
     </div>

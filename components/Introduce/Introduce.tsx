@@ -19,7 +19,7 @@ export default function Introduce() {
             }}
           />
         </span>
-        하는 프론트엔드 개발자 홍길동입니다.
+        하는 프론트엔드 개발자 한상일입니다.
       </h1>
       <p className="font-bold py-3">항목 1 - XXXXXXX</p>
       <p className="font-bold py-3">항목 2 - XXXXXXX</p>

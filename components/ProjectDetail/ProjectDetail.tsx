@@ -44,9 +44,8 @@ export default function ProjectDetail() {
             <h2 className="text-xl font-bold mb-2">프로젝트 명 : XXXXXX</h2>
             <p className="mb-2 font-bold">사용 기술</p>
             <div className="flex flex-wrap gap-2">
-              <Badge variant='outline'>Next.js</Badge>
-              <Badge variant='outline'>Typescript</Badge>
-
+              <Badge variant="outline">Next.js</Badge>
+              <Badge variant="outline">Typescript</Badge>
             </div>
 
             <h3 className="my-2 font-bold">참가 인원</h3>

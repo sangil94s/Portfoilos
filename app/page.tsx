@@ -12,7 +12,7 @@ export default function Home() {
         <div className="min-h-screen flex flex-col justify-center">
           <Introduce />
         </div>
-        <div className="min-h-screen flex flex-col justify-center">
+        <div className="py-20 flex flex-col justify-center">
           <h1 id="core" className="text-center text-xl font-bold py-4 lg:text-4xl">
             핵심 역량
           </h1>
@@ -23,8 +23,8 @@ export default function Home() {
             <CoreCapabilities />
           </FadeInSection>
         </div>
-        <div className="min-h-screen flex flex-col justify-center">
-          <h1 id="skill" className="text-center text-xl font-bold py-4 lg:text-4xl">
+        <div className="py-20 flex flex-col justify-center">
+          <h1 id="skill" className="text-center text-xl font-bold py-6 lg:text-4xl">
             사용 기술
           </h1>
           <div className="flex flex-col justify-center items-center">
@@ -33,21 +33,19 @@ export default function Home() {
             </FadeInSection>
           </div>
         </div>
-        <div className="min-h-screen flex flex-col justify-center">
-          <h1 id="career" className="text-center text-xl font-bold py-4 lg:text-4xl">
+        <div className="py-20 flex flex-col justify-center">
+          <h1 id="career" className="text-center text-xl font-bold py-6 lg:text-4xl">
             경력 사항
           </h1>
           <FadeInSection>
             <Career />
           </FadeInSection>
         </div>
-        <div className="min-h-screen flex flex-col justify-center">
-          <h1 id="project" className="text-center text-xl font-bold py-4 lg:text-4xl">
-            프로젝트
+        <div className="py-20 flex flex-col justify-center">
+          <h1 id="project" className="text-center text-xl font-bold py-6 lg:text-4xl">
+            진행한 프로젝트
           </h1>
-          <p className="text-center text-base font-bold py-2">
-            현재 까지 진행한 회사 프로젝트 또는 개인 프로젝트 입니다.
-          </p>
+
           <FadeInSection>
             <ProjectCard />
           </FadeInSection>

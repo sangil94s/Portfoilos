@@ -136,7 +136,7 @@
       "description": "Next.js + Typescirpt + TailwindCSS 로 기존 업무 내용을 정리하는 목적의 프로젝트",
       "techskills": "Next.js App Router, Typescript, TailwindCSS, Vercel",
       "parts": "프로젝트 전수 진행",
-      "image": "/project/temp.jpg",
+      "image": "/project/12345.jpg",
       "useSkillImage": [
         {
           "name": "Next.js (App Router)",

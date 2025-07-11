@@ -1,22 +1,54 @@
 {
   "AFO": {
     "detail": "AFO 프로젝트는 UX를 개선하며 백오피스를 재구축한 프로젝트입니다...",
-    "features": ["로그인 기능", "대시보드", "사용자 관리"],
-    "github": "https://github.com/your-afo-link"
+    "features": ["로그인 기능", "대시보드", "사용자 관리 등 주요 기능"],
+    "troubleshooting": ["주요 트러블 슈팅"],
+    "result": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 결과"],
+    "projectskill": ["1", "2"],
+    "projectpeople": "XX직무 Y명 중 XX담당",
+    "projectpart": ["A담당", "B역할 담당"],
+    "reserve": ["1"],
+    "thumbnailImage": "",
+    "github": "",
+    "deploy": ""
   },
   "Compact-Machine": {
     "detail": "대리점 정보 조회 백오피스입니다...",
-    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
-    "github": "https://github.com/your-compact-link"
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 기능"],
+    "troubleshooting": ["주요 트러블 슈팅"],
+    "result": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 결과"],
+    "projectskill": ["1", "2"],
+    "projectpeople": "XX직무 Y명 중 XX담당",
+    "projectpart": ["A담당", "B역할 담당"],
+    "reserve": ["1"],
+    "thumbnailImage": "",
+    "github": "",
+    "deploy": ""
   },
   "Steamrader": {
     "detail": "대리점 정보 조회 백오피스입니다...",
-    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
-    "github": "https://github.com/your-compact-link"
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 기능"],
+    "troubleshooting": ["주요 트러블 슈팅"],
+    "result": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 결과"],
+    "projectskill": ["1", "2"],
+    "projectpeople": "XX직무 Y명 중 XX담당",
+    "projectpart": ["A담당", "B역할 담당"],
+    "reserve": ["1"],
+    "thumbnailImage": "",
+    "github": "https://github.com/your-compact-link",
+    "deploy": "https://github.com/your-compact-link"
   },
   "Portfolio": {
     "detail": "대리점 정보 조회 백오피스입니다...",
-    "features": ["검색 필터", "사용자 권한", "CSV 다운로드"],
-    "github": "https://github.com/your-compact-link"
+    "features": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 기능"],
+    "troubleshooting": ["주요 트러블 슈팅"],
+    "result": ["검색 필터", "사용자 권한", "CSV 다운로드 등 주요 결과"],
+    "projectskill": ["1", "2"],
+    "projectpeople": "XX직무 Y명 중 XX담당",
+    "projectpart": ["A담당", "B역할 담당"],
+    "reserve": ["1"],
+    "thumbnailImage": "",
+    "github": "https://github.com/your-compact-link",
+    "deploy": "https://github.com/your-compact-link"
   }
 }

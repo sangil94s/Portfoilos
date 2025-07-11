@@ -13,20 +13,20 @@ export default function Introduce() {
         <section className="w-3/12">
           <Image
             src={'/blacks.png'}
-            alt="아마도 사진 배치 지역"
-            width={200}
-            height={200}
-            className="rounded-full"
+            alt="증명 사진 배치 지역"
+            width={300}
+            height={300}
+            className="rounded-md"
           />
         </section>
-        <section className="mx-2 w-6/12">
-          <h1 className="text-xl font-bold py-4 lg:text-2xl">
+        <section className="mx-10 w-7/12">
+          <h1 className="text-xl font-bold py-4 lg:text-xl">
             <span className="inline-block text-red-500">
               <Typewriter
                 options={{
                   strings: [
-                    '레거시의 문제를 개선',
-                    '개발 문화 개선을 적극적으로 제안',
+                    '문제를 먼저 찾고 개선',
+                    '개발 문화 개선을 먼저 제안',
                     '적극적으로 협업',
                   ],
                   autoStart: true,
@@ -36,19 +36,16 @@ export default function Introduce() {
                 }}
               />
             </span>
-            하는 프론트엔드 개발자 한상일입니다.
+            하는 프론트엔드 XXX입니다.
           </h1>
-          <p className="font-bold text-xs py-1">
-            레거시의 성능 이슈 (크롬 Performance LCP 평균 30초, Lighthouse NO_FCP) 등을 이후
-            프로젝트에서 LCP 1초, Lighthouse 76점으로 개선
+          <p className="font-bold text-sm py-1">
+            기존 상황에서 개선 가능한 부분을 찾고 고쳐내는걸 중시 합니다.
           </p>
-          <p className="font-bold text-xs py-1">
-            기존에 없던 API 문서화를 먼저 제안, 팀과 협의 후 Notion으로 문서화하며 2개 프로젝트를
-            진행.
+          <p className="font-bold text-sm py-1">
+            빠른 개발을 위해 후순위로 밀렸던 성능 최적화, 문서화 등
           </p>
-          <p className="font-bold text-xs py-1">
-            디자이너에게 받은 AI 가이드 파일에 사용한 색상 정보가 부재를 확인, 사용한 색상에 대한
-            HEX 코드 추가에 대해 협의를 진행하여 2개 프로젝트에 개선된 방식으로 적용{' '}
+          <p className="font-bold text-sm py-1">
+            여러 부분에 대해 제안하고 실행하여 더 개선된 서비스나 개발 문화 발전에 기여하고자 합니다
           </p>
           <div className="grid grid-cols-2 justify-items-center gap-2 py-4">
             <ResumeDownload />

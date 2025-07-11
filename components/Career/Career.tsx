@@ -17,9 +17,9 @@ export default function Career() {
 
         <section className="w-full md:mx-6">
           <h4 className="py-3 text-xl font-bold">{data?.companytitle}</h4>
-          <p className="py-2 text-xs text-slate-400 font-bold">{data?.companydate}</p>
-          <p className="text-xs text-slate-400 font-bold">{data?.companyposition}</p>
-          <p className="text-xs text-slate-400 font-bold py-2">{data?.companyInfo}</p>
+          <p className="py-2 text-sm text-slate-400 font-bold">{data?.companydate}</p>
+          <p className="text-sm text-slate-400 font-bold">{data?.companyposition}</p>
+          <p className="text-sm text-slate-400 font-bold py-2">{data?.companyInfo}</p>
           <ul className="list-disc list-inside font-bold">
             <li className="text-sm py-4">{data?.performanceone}</li>
             <li className="text-sm py-4">{data?.performancetwo}</li>

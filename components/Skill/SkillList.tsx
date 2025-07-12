@@ -28,15 +28,13 @@ export default function SkillList() {
       <div className="grid grid-cols-3 gap-4 lg:grid-cols-6">
         {filteredSkills.map((skill: Skill) => {
           const borderClass =
-            selectedCategory === '흥미 있음' && skill.isInterested
-              ? 'ring-2 ring-pink-400'
-              : selectedCategory === 'Frontend' && skill.category === 'Frontend'
-                ? 'ring-2 ring-blue-400'
-                : selectedCategory === 'Backend' && skill.category === 'Backend'
-                  ? 'ring-2 ring-green-400'
-                  : selectedCategory === 'Deploy' && skill.category === 'Deploy'
-                    ? 'ring-2 ring-orange-400'
-                    : '';
+            selectedCategory === 'Frontend' && skill.category === 'Frontend'
+              ? 'ring-2 ring-blue-500'
+              : selectedCategory === 'Backend' && skill.category === 'Backend'
+                ? 'ring-2 ring-green-500'
+                : selectedCategory === 'Deploy' && skill.category === 'Deploy'
+                  ? 'ring-2 ring-orange-500'
+                  : '';
 
           return (
             <div

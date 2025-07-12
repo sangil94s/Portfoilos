@@ -29,13 +29,6 @@
       "image": "/skill/mysql.png"
     },
     {
-      "id": 5,
-      "title": "Nest.js",
-      "category": "Backend",
-      "isInterested": true,
-      "image": "/skill/nest.png"
-    },
-    {
       "id": 6,
       "title": "Vercel",
       "category": "Deploy",

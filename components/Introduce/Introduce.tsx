@@ -10,7 +10,7 @@ export default function Introduce() {
   return (
     <>
       <div className="flex flex-col lg:flex-row justify-center items-center">
-        <section className="w-3/12">
+        <section className="w-6/12 lg:w-3/12">
           <Image
             src={'/blacks.png'}
             alt="증명 사진 배치 지역"
@@ -19,7 +19,7 @@ export default function Introduce() {
             className="rounded-md"
           />
         </section>
-        <section className="mx-10 w-7/12">
+        <section className="mx-10 md:w-full lg:w-7/12">
           <h1 className="text-xl font-bold py-4 lg:text-xl">
             <span className="inline-block text-red-500">
               <Typewriter

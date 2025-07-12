@@ -4,14 +4,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import data from '../../public/data/skill.json';
 import SkillFilter from './SkillFilter';
+import { SkillListType } from '@/types/typeInfomation';
 
-interface Skill {
-  id: number;
-  title: string;
-  category: string;
-  isInterested: boolean;
-  image: string;
-}
 export default function SkillList() {
   const [selectedCategory, setSelectedCategory] = useState('전체');
 
@@ -26,7 +20,7 @@ export default function SkillList() {
       <SkillFilter selected={selectedCategory} onSelect={setSelectedCategory} />
 
       <div className="grid grid-cols-3 gap-4 lg:grid-cols-6">
-        {filteredSkills.map((skill: Skill) => {
+        {filteredSkills.map((skill: SkillListType) => {
           const borderClass =
             selectedCategory === 'Frontend' && skill.category === 'Frontend'
               ? 'ring-2 ring-blue-500'

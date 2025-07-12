@@ -1,5 +1,5 @@
 {
-  "companytitle": "임시-회사명",
+  "companytitle": "킴스인더스트리",
   "companysmalldescription": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다",
   "companydate": "2022.12 - 2025.03 [약 2년 4개월]",
   "companyposition": "R&D 소프트웨어 2팀 프론트엔드 개발자",
@@ -9,5 +9,5 @@
   "performancethree": "레거시 서비스를 이후 프로젝트에서 개선 (EJS → React 변경, Zustand 도입, 기능 단위로 컴포넌트 분리)",
   "performancefour": "디자인 가이드(AI 파일)에 사용 색상 정보 부재를 확인 후 협의하여 HEX 코드 정보를 가이드에 추가된 후 2개 프로젝트에 정착.",
   "performancefive": "API 문서화가 부재하여 먼저 제안 후 팀과 협의하여 Notion으로 도입과 2개 프로젝트에 정착",
-  "companylogo": "/blacks.png"
+  "companylogo": "/work/logos.jpg"
 }

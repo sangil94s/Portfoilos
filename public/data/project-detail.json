@@ -4,10 +4,13 @@
     "detail": "AFO 프로젝트는 UX를 개선하며 백오피스를 재구축한 프로젝트입니다...",
     "features": [
       {
-        "name": "1"
+        "name": "유효성 검사 - React-Hook-Form과 Joi로 실시, 필수값 누락을 방지"
       },
       {
-        "name": "2"
+        "name": "반응형 - FHD 해상도, 갤럭시 S20 Ultra 기준으로 기기별 최적화"
+      },
+      {
+        "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
       }
     ],
     "troubleshooting": [
@@ -40,10 +43,6 @@
         "image": "/skill/tailwindcss.png"
       },
       {
-        "name": "Zustand",
-        "image": "/skill/zustand.png"
-      },
-      {
         "name": "Express",
         "image": "/skill/express.png"
       },
@@ -67,14 +66,31 @@
     "projectpeople": "디자이너 1명, PM 1명, HW 3명, SW 2명 중 풀스택 웹 개발 전담",
     "projectpart": [
       {
-        "name": "1"
+        "name": "유일한 풀스택 개발 담당, 기획부터 참가하여 개발 진행"
       },
       {
-        "name": "2"
+        "name": "레거시의 이슈 (UX 불일치, 유효성 검사 없음)을 해당 프로젝트에서 개선"
+      },
+      {
+        "name": "디자인 가이드 (AI 파일)에 사용 색상 정보가 누락, 협의 후 HEX 코드 추가"
       }
     ],
-    "reserve": ["예비용"],
+    "skill": [
+      {
+        "name": "React",
+        "description": "2"
+      },
+      {
+        "name": "Joi",
+        "description": "2"
+      },
+      {
+        "name": "GCP",
+        "description": "3"
+      }
+    ],
     "thumbnailImage": "/project/afo-logo.png",
+    "date": "2023.03 - 2023.09 (약 6개월)",
     "github": "",
     "deploy": ""
   },
@@ -83,10 +99,13 @@
     "detail": "대리점 정보 조회 백오피스입니다...",
     "features": [
       {
-        "name": "1"
+        "name": "한국어, 영어 언어 변경 - I18next로 언어 전환이 가능하도록 구현"
       },
       {
-        "name": "2"
+        "name": "반응형 - FHD 해상도, 갤럭시 S20 Ultra 기준으로 기기별 최적화"
+      },
+      {
+        "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
       }
     ],
     "troubleshooting": [
@@ -146,14 +165,31 @@
     "projectpeople": "디자이너 1명, PM 1명, HW 3명, SW 2명 중 풀스택 웹 개발 전담",
     "projectpart": [
       {
-        "name": "1"
+        "name": "유일한 풀스택 개발 담당, 기획부터 참가하여 MVP 오픈 후 추가 기능 구현"
       },
       {
-        "name": "2"
+        "name": "이전 프로젝트에 미 사용한 Zustand, i18next 등 사용, 여러 국가 서비스 대비"
+      },
+      {
+        "name": "팀과 협의 후 이전에 없던 API 문서화를 Notion로 생성, 문서화 정착 주도"
       }
     ],
-    "reserve": ["예비용"],
+    "skill": [
+      {
+        "name": "I18next",
+        "description": "1"
+      },
+      {
+        "name": "Zustand",
+        "description": "2"
+      },
+      {
+        "name": "GCP",
+        "description": "3"
+      }
+    ],
     "thumbnailImage": "/project/compact-login.png",
+    "date": "2024.01 - 2025.03 (약 1년 2개월)",
     "github": "",
     "deploy": ""
   },
@@ -162,10 +198,10 @@
     "detail": "대리점 정보 조회 백오피스입니다...",
     "features": [
       {
-        "name": "1"
+        "name": "반응형 레이아웃 - 모바일, PC 화면 크기 별 최적화"
       },
       {
-        "name": "2"
+        "name": "필터 - 각 카테고리별 일치하는 데이터만 렌더링"
       }
     ],
     "troubleshooting": [
@@ -213,14 +249,21 @@
     "projectpeople": "1인 프로젝트로 전수 담당",
     "projectpart": [
       {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "name": "프로젝트 관련 모든 부분 전수 진행"
       }
     ],
-    "reserve": ["예비용 부분"],
+    "skill": [
+      {
+        "name": "Supabase",
+        "description": "미 사용해본 Supabase를 사용하여 데이터를 저장하는 목적으로만 사용"
+      },
+      {
+        "name": "Prisma",
+        "description": "기존 SQL 쿼리로 작성한 사례와 달리 새로운 ORM 학습 목적"
+      }
+    ],
     "thumbnailImage": "/project/steamrader-main.png",
+    "date": "2025.04 - 2025.05 (약 1개월)",
     "github": "https://github.com/sangil94s/steamrader",
     "deploy": "https://steam-rader.vercel.app/"
   },
@@ -229,10 +272,10 @@
     "detail": "대리점 정보 조회 백오피스입니다...",
     "features": [
       {
-        "name": "1"
+        "name": "반응형 레이아웃 - 모바일, PC 화면 크기 별 최적화"
       },
       {
-        "name": "2"
+        "name": "다크모드 - next-themes를 활용한 라이트/다크 모드 전환"
       }
     ],
     "troubleshooting": [
@@ -272,14 +315,17 @@
     "projectpeople": "1인 프로젝트로 전수 담당",
     "projectpart": [
       {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "name": "프로젝트 관련 모든 부분 전수 진행"
       }
     ],
-    "reserve": ["예비용"],
+    "skill": [
+      {
+        "name": "Shadcn",
+        "description": "빠르게 디자인을 구현하고자 사용"
+      }
+    ],
     "thumbnailImage": "/project/12345.jpg",
+    "date": "2025.07 - 2025.07 (1개월 이내)",
     "github": "https://github.com/sangil94s/Portfoilos",
     "deploy": "https://www.fronthan.dev/"
   }

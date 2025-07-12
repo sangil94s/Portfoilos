@@ -2,29 +2,13 @@ import Image from 'next/image';
 import { Card, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import data from '../../public/data/project-infomation.json';
 import Link from 'next/link';
-
+import { ProjectCardListType } from '@/types/typeInfomation';
 // 프로젝트를 보여주는 카드 부분
-
-interface SkillImage {
-  name: string;
-  image: string;
-}
-
-interface Project {
-  id: number;
-  title: string;
-  date: string;
-  teamcount: string;
-  description: string;
-  parts: string;
-  image: string;
-  useSkillImage: SkillImage[];
-}
 
 export default function ProjectCard() {
   return (
     <div className="flex flex-col justify-center items-center gap-2 lg:flex-row">
-      {data?.project.map((item: Project) => (
+      {data?.project.map((item: ProjectCardListType) => (
         <Link key={item.id} href={`/project/${item.title}`}>
           <Card className="group relative cursor-pointer p-4 w-[90vw] max-w-[500px] sm:max-w-sm lg:w-[650px] lg:h-[400px] hover:bg-gray-400 hover:shadow-md transition-all duration-200">
             <Image
@@ -42,8 +26,8 @@ export default function ProjectCard() {
             <CardHeader>
               <CardTitle>프로젝트 명 : {item.title}</CardTitle>
               <CardDescription className="py-1">기간: {item.date}</CardDescription>
-              <CardDescription className="py-1">인원: {item.teamcount}</CardDescription>
-              <CardDescription className="py-1">담당: {item.parts}</CardDescription>
+              <CardDescription className="py-1 font-bold">인원: {item.teamcount}</CardDescription>
+              <CardDescription className="py-1 font-bold">담당: {item.parts}</CardDescription>
               <CardDescription className="py-2 text-black">{item.description}</CardDescription>
               <div className="flex flex-row justify-center gap-2">
                 <h4 className="text-base font-bold">Skill: </h4>

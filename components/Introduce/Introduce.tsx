@@ -12,7 +12,7 @@ export default function Introduce() {
       <div className="flex flex-col lg:flex-row justify-center items-center">
         <section className="w-6/12 lg:w-3/12">
           <Image
-            src={'/blacks.png'}
+            src={'/Profile.jpeg'}
             alt="증명 사진 배치 지역"
             width={300}
             height={300}
@@ -20,7 +20,7 @@ export default function Introduce() {
           />
         </section>
         <section className="mx-10 md:w-full lg:w-7/12">
-          <h1 className="text-xl font-bold py-4 lg:text-xl">
+          <h1 className="text-base font-bold py-4 lg:text-xl">
             <span className="inline-block text-red-500">
               <Typewriter
                 options={{
@@ -36,7 +36,7 @@ export default function Introduce() {
                 }}
               />
             </span>
-            하는 프론트엔드 XXX입니다.
+            하는 프론트엔드 한상일입니다.
           </h1>
           <p className="font-bold text-sm py-1">
             기존 상황에서 개선 가능한 부분을 찾고 고쳐내는걸 중시 합니다.

@@ -9,7 +9,7 @@ const categories = ['전체', 'Frontend', 'Backend', 'Deploy'];
 export default function SkillFilter({ selected, onSelect }: Props) {
   return (
     <>
-      <div className="grid grid-cols-4 justify-items-center gap-2 mx-4">
+      <div className="flex flex-wrap justify-center gap-2 mx-4">
         {categories.map(CategoryName => (
           <button
             key={CategoryName}

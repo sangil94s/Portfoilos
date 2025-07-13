@@ -23,9 +23,9 @@ export default function DarkMode() {
       />
       <span>
         {theme === 'dark' ? (
-          <Moon className="w-4 h-4 m-auto" />
+          <Moon className="w-4 h-4 m-auto dark:text-black" />
         ) : (
-          <Sun className="w-4 h-4 m-auto" />
+          <Sun className="w-4 h-4 m-auto dark:text-black" />
         )}
       </span>
     </div>

@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ProjectDetailType } from '@/types/typeInfomation';
+import CompactTable from '../ETC/CompactTable';
 
 export default function ProjectDetail() {
   const params = useParams();
@@ -36,8 +37,11 @@ export default function ProjectDetail() {
       <div className="flex flex-col lg:flex-row max-w-screen-xl min-h-screen m-auto my-8 p-4 gap-4">
         <aside className="lg:w-[800px] lg:h-[600px] lg:sticky top-4 space-y-4">
           <div className="bg-gray-100 rounded-lg p-4 shadow">
-            <h2 className="text-xl font-bold py-6">프로젝트 명 : {data?.title}</h2>
-            <p className="py-4 text-lg font-bold">사용 기술</p>
+            <h2 className="text-xl font-bold py-6 dark:text-black">프로젝트 명 : {data?.title}</h2>
+            {data?.thumbnailImage && (
+            <Image src={data?.thumbnailImage} width={200} height={100} alt="프로젝트 썸네일 이미지" className='m-auto' />
+            )}
+            <p className="py-4 text-lg font-bold dark:text-black">사용 기술</p>
 
             <div className="flex flex-wrap gap-2">
               {data?.projectskill.map(skill => (
@@ -53,34 +57,34 @@ export default function ProjectDetail() {
               ))}
             </div>
 
-            <h3 className="py-6 text-lg font-bold">참가 인원</h3>
-            <p className="underline text-xs lg:text-base">{data?.projectpeople}</p>
+            <h3 className="py-6 text-lg font-bold dark:text-black">참가 인원</h3>
+            <p className="underline text-xs lg:text-base dark:text-black">{data?.projectpeople}</p>
 
-            <h3 className="py-6 text-lg font-bold">진행 기간</h3>
-            <p className="text-xs lg:text-base">{data?.date}</p>
+            <h3 className="py-6 text-lg font-bold dark:text-black">진행 기간</h3>
+            <p className="text-xs lg:text-base dark:text-black">{data?.date}</p>
 
-            <h3 className="py-6 text-lg font-bold">담당 역할</h3>
+            <h3 className="py-6 text-lg font-bold dark:text-black">담당 역할</h3>
             {data?.projectpart.map(item => (
               <ul key={item.name} className="list-disc list-inside space-y-1">
-                <li className="py-2">{item.name}</li>
+                <li className="py-2 dark:text-black">{item.name}</li>
               </ul>
             ))}
             {data?.deploy?.length !== 0 && (
               <>
-                <h3 className="py-4 text-lg font-bold">Link</h3>
+                <h3 className="py-4 text-lg font-bold dark:text-black">Link</h3>
 
                 <div className="flex gap-2 mt-2">
                   <Link
                     href={`${data?.github}`}
                     target="_blank"
-                    className="border border-slate-300 rounded-md p-2 font-bold"
+                    className="border border-slate-300 rounded-md p-2 font-bold dark:text-black"
                   >
                     Github 바로가기
                   </Link>
                   <Link
                     href={`${data?.deploy}`}
                     target="_blank"
-                    className="border border-slate-300 rounded-md p-2 font-bold"
+                    className="border border-slate-300 rounded-md p-2 font-bold dark:text-black"
                   >
                     배포 링크 바로가기
                   </Link>
@@ -90,7 +94,7 @@ export default function ProjectDetail() {
           </div>
 
           {title === 'Compact-Machine' && (
-            <div className="bg-gray-100 rounded-lg h-[200px] flex items-center justify-center text-center">
+            <div className="bg-gray-100 rounded-lg h-[200px] flex items-center justify-center text-center dark:text-black">
               Carousel 들어갈 자리
             </div>
           )}
@@ -98,20 +102,20 @@ export default function ProjectDetail() {
 
         <main className="lg:w-2/3 w-full space-y-6">
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2">기술 선정 사유</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">기술 선정 사유</h3>
             {data?.skill?.map(skills => (
               <ul key={skills.name} className="list-disc list-inside space-y-1">
-                <h4 className="font-bold">{skills.name}</h4>
-                <li className="py-2">{skills.description}</li>
+                <h4 className="font-bold dark:text-black">{skills.name}</h4>
+                <li className="py-2 dark:text-black">{skills.description}</li>
               </ul>
             ))}
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2">주요 기능</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">주요 기능</h3>
             <ul className="list-disc list-inside space-y-1">
               {data?.features.map(item => (
-                <li className="py-2" key={item.name}>
+                <li className="py-2 dark:text-black" key={item.name}>
                   {item.name}
                 </li>
               ))}
@@ -119,10 +123,10 @@ export default function ProjectDetail() {
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2">트러블 슈팅 - 문제 발생과 해결</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">트러블 슈팅 - 문제 발생과 해결</h3>
             <ul className="list-disc list-inside space-y-1">
               {data?.troubleshooting.map(item => (
-                <li className="py-2" key={item.name}>
+                <li className="py-2 dark:text-black" key={item.name}>
                   {item.name}
                 </li>
               ))}
@@ -130,10 +134,13 @@ export default function ProjectDetail() {
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2">결과 - 성능 개선 결과 or 기타 프로젝트 결과</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">결과 - 성능 개선 결과 or 기타 프로젝트 결과</h3>
+            {title === 'Compact-Machine' && (
+              <CompactTable />
+            )}
             <ul className="list-disc list-inside space-y-1">
               {data?.result.map(item => (
-                <li className="py-2" key={item.name}>
+                <li className="py-2 dark:text-black" key={item.name}>
                   {item.name}
                 </li>
               ))}

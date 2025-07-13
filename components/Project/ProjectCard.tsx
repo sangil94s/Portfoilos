@@ -28,7 +28,9 @@ export default function ProjectCard() {
               <CardDescription className="py-1">기간: {item.date}</CardDescription>
               <CardDescription className="py-1 font-bold">인원: {item.teamcount}</CardDescription>
               <CardDescription className="py-1 font-bold">담당: {item.parts}</CardDescription>
-              <CardDescription className="py-2 text-black dark:text-slate-300">{item.description}</CardDescription>
+              <CardDescription className="py-2 text-black dark:text-slate-300">
+                {item.description}
+              </CardDescription>
               <div className="flex flex-row justify-center gap-2">
                 <h4 className="text-base font-bold">Skill: </h4>
                 {item.useSkillImage.map(skill => (

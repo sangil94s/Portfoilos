@@ -7,6 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ProjectDetailType } from '@/types/typeInfomation';
 import CompactTable from '../ETC/CompactTable';
+import CompactCarousel from './Carousel/CompactCarousel';
 
 export default function ProjectDetail() {
   const params = useParams();
@@ -39,7 +40,13 @@ export default function ProjectDetail() {
           <div className="bg-gray-100 rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold py-6 dark:text-black">프로젝트 명 : {data?.title}</h2>
             {data?.thumbnailImage && (
-            <Image src={data?.thumbnailImage} width={200} height={100} alt="프로젝트 썸네일 이미지" className='m-auto' />
+              <Image
+                src={data?.thumbnailImage}
+                width={200}
+                height={100}
+                alt="프로젝트 썸네일 이미지"
+                className="m-auto"
+              />
             )}
             <p className="py-4 text-lg font-bold dark:text-black">사용 기술</p>
 
@@ -95,7 +102,7 @@ export default function ProjectDetail() {
 
           {title === 'Compact-Machine' && (
             <div className="bg-gray-100 rounded-lg h-[200px] flex items-center justify-center text-center dark:text-black">
-              Carousel 들어갈 자리
+              <CompactCarousel />
             </div>
           )}
         </aside>
@@ -123,7 +130,9 @@ export default function ProjectDetail() {
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2 dark:text-black">트러블 슈팅 - 문제 발생과 해결</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">
+              트러블 슈팅 - 문제 발생과 해결
+            </h3>
             <ul className="list-disc list-inside space-y-1">
               {data?.troubleshooting.map(item => (
                 <li className="py-2 dark:text-black" key={item.name}>
@@ -134,10 +143,10 @@ export default function ProjectDetail() {
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2 dark:text-black">결과 - 성능 개선 결과 or 기타 프로젝트 결과</h3>
-            {title === 'Compact-Machine' && (
-              <CompactTable />
-            )}
+            <h3 className="text-lg font-bold py-2 dark:text-black">
+              결과 - 성능 개선 결과 or 기타 프로젝트 결과
+            </h3>
+            {title === 'Compact-Machine' && <CompactTable />}
             <ul className="list-disc list-inside space-y-1">
               {data?.result.map(item => (
                 <li className="py-2 dark:text-black" key={item.name}>

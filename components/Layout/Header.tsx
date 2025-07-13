@@ -13,16 +13,28 @@ export default function Headers() {
         </Link>
         {pathname === '/' && (
           <section className="flex gap-6 m-3">
-            <Link href="#core" className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500">
+            <Link
+              href="#core"
+              className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500"
+            >
               핵심 역량
             </Link>
-            <Link href="#skill" className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500">
+            <Link
+              href="#skill"
+              className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500"
+            >
               사용 기술
             </Link>
-            <Link href="#career" className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500">
+            <Link
+              href="#career"
+              className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500"
+            >
               경력
             </Link>
-            <Link href="#project" className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500">
+            <Link
+              href="#project"
+              className="font-bold text-xs lg:text-base cursor-pointer dark:text-blue-500"
+            >
               프로젝트
             </Link>
           </section>

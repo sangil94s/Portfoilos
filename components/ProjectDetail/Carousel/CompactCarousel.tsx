@@ -30,7 +30,7 @@ export default function CompactCarousel() {
   }, [instanceRef]);
 
   const currentImage = images[currentSlide];
-  const currentText = texts[currentImage] ;
+  const currentText = texts[currentImage];
 
   return (
     <>

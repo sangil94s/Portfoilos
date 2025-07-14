@@ -7,11 +7,12 @@ export default function CoreCapabilities() {
     <>
       <div className="flex flex-col justify-center items-center gap-4 m-2 lg:gap-8 lg:flex-row">
         {data?.core.map((item: CoreCapabilitiesType) => (
-          <section key={item.id} className="max-w-sm w-full lg:h-[400px]">
+          <section key={item.id} className="w-full lg:h-[400px]">
             <h1 className="text-center text-xl font-bold p-4">{item.title}</h1>
             <h4 className="text-center text-xs font-bold p-2">{item.subtitle}</h4>
             <p className="p-4 text-sm">{item.description}</p>
             <p className="p-4 text-sm">{item.descriptiontwo}</p>
+            <p className="p-4 text-sm">{item.descriptionthree}</p>
           </section>
         ))}
       </div>

@@ -42,7 +42,7 @@ export default function Introduce() {
             기존 상황에서 개선 가능한 부분을 찾고 고쳐내는걸 중시 합니다.
           </p>
           <p className="font-bold text-sm py-1">
-            빠른 개발을 위해 후순위로 밀렸던 성능 최적화, 문서화 등
+            개발 이외에도 성능 최적화, 문서화 등 협업으로 빠르게 문제를 해결하는 걸 선호합니다.
           </p>
           <p className="font-bold text-sm py-1">
             여러 부분에 대해 제안하고 실행하여 더 개선된 서비스나 개발 문화 발전에 기여하고자 합니다

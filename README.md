@@ -6,17 +6,22 @@
 - React 19
 - Typescript
 - TailwindCSS
+- Shadcn
 
 ---
 
 ### Link
 
-- 배포 링크
+- [바로가기](https://www.fronthan.dev/)
 
 - [favicon 출처](https://www.flaticon.com/kr/free-icon/settings_148913?related_id=148913&origin=pack)
 
 ---
 
-### Introduce
+### 설치와 실행
 
--
+> npm install
+
+> npm run dev
+
+- 해당 프로젝트는 별도의 환경 변수를 필요로 하지 않습니다.

@@ -131,30 +131,31 @@ export default function ProjectDetail() {
 
           <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">
-              트러블 슈팅 - 문제 발생과 해결
+              트러블 슈팅 - 문제 발생과 해결 - 추후 문제-해결-결과 로 변경 예정
             </h3>
-            <ul className="list-disc list-inside space-y-1">
-              {data?.troubleshooting.map(item => (
-                <li className="py-2 dark:text-black" key={item.name}>
-                  {item.name}
-                </li>
+            <div className="list-disc list-inside space-y-4">
+              {data?.troubleshootings.map((item, index) => (
+                <section key={index} className="py-2 dark:text-black">
+                  <p>
+                    <strong>문제 발생:</strong> {item.issue}
+                  </p>
+                  <p>
+                    <strong>문제 해결:</strong> {item.solution}
+                  </p>
+                  <p>
+                    <strong>결과:</strong> {item.result}
+                  </p>
+                </section>
               ))}
-            </ul>
+              {/* 스타일 수정 필요 */}
+            </div>
           </section>
-
-          <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2 dark:text-black">
-              결과 - 성능 개선 결과 or 기타 프로젝트 결과
-            </h3>
-            {title === 'Compact-Machine' && <CompactTable />}
-            <ul className="list-disc list-inside space-y-1">
-              {data?.result.map(item => (
-                <li className="py-2 dark:text-black" key={item.name}>
-                  {item.name}
-                </li>
-              ))}
-            </ul>
-          </section>
+          {title === 'Compact-Machine' && (
+            <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
+              <h3 className="text-lg font-bold py-2 dark:text-black">APEHEX와 컴팩트머신 비교</h3>
+              <CompactTable />
+            </section>
+          )}
         </main>
       </div>
     </>

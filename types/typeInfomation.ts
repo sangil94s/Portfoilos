@@ -35,6 +35,9 @@ export interface ProjectCardListType {
 
 export interface ITypes {
   name: string;
+  issue?: string;
+  solution?: string;
+  result?: string;
 }
 export interface SkillImage {
   name: string;
@@ -48,8 +51,7 @@ export interface ProjectDetailType {
   title: string;
   detail: string;
   features: ITypes[];
-  troubleshooting: ITypes[];
-  result: ITypes[];
+  troubleshootings: ITypes[];
   projectskill: SkillImage[];
   projectpeople: string;
   projectpart: ITypes[];

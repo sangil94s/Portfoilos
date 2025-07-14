@@ -13,20 +13,16 @@
         "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
       }
     ],
-    "troubleshooting": [
+    "troubleshootings": [
       {
-        "name": "1"
+        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
+        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
+        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
       },
       {
-        "name": "2"
-      }
-    ],
-    "result": [
-      {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
+        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
+        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
       }
     ],
     "projectskill": [
@@ -108,20 +104,16 @@
         "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
       }
     ],
-    "troubleshooting": [
+    "troubleshootings": [
       {
-        "name": "1"
+        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
+        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
+        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
       },
       {
-        "name": "2"
-      }
-    ],
-    "result": [
-      {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
+        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
+        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
       }
     ],
     "projectskill": [
@@ -204,20 +196,17 @@
         "name": "필터 - 각 카테고리별 일치하는 데이터만 렌더링"
       }
     ],
-    "troubleshooting": [
+
+    "troubleshootings": [
       {
-        "name": "1"
+        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
+        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
+        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
       },
       {
-        "name": "2"
-      }
-    ],
-    "result": [
-      {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
+        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
+        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
       }
     ],
     "projectskill": [
@@ -278,20 +267,17 @@
         "name": "다크모드 - next-themes를 활용한 라이트/다크 모드 전환"
       }
     ],
-    "troubleshooting": [
+
+    "troubleshootings": [
       {
-        "name": "1"
+        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
+        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
+        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
       },
       {
-        "name": "2"
-      }
-    ],
-    "result": [
-      {
-        "name": "1"
-      },
-      {
-        "name": "2"
+        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
+        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
+        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
       }
     ],
     "projectskill": [

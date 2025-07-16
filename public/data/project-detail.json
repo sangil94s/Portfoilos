@@ -10,19 +10,29 @@
         "name": "반응형 - FHD 해상도, 갤럭시 S20 Ultra 기준으로 기기별 최적화"
       },
       {
-        "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
+        "name": "UX 기능 통합 - Log 페이지마다 UX가 불 일치하는 문제 개선"
       }
     ],
     "troubleshootings": [
       {
-        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
-        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
-        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
+        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 수정 소요 발생",
+        "solution": "레거시는 내부 이슈로 코드 수정 불가 - 해당 프로젝트에서 5개의 Log Page로 축소",
+        "result": "Log Page마다 불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 통일하여 불 일치성 개선"
       },
       {
-        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
-        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
-        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
+        "issue": "레거시의 유효성 검사 누락 - 필요 데이터 누락 검증 수단 부재",
+        "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
+        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 POST로 받을 때 필수 값 누락 이 방지 되도록 개선"
+      },
+      {
+        "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css라는 전역 파일 혼용",
+        "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일 작성을 통일하여 디자인 시스템 개선",
+        "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
+      },
+      {
+        "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 필요",
+        "solution": "디자이너와 협의 과정에서 사용한 색상에 대한 HEX 코드를 추가하여 서로 불필요 소통을 축소하자 협의",
+        "result": "이후 AI 파일로 작성된 가이드 또는 해당 메일에 사용 색상에 대한 HEX 코드가 추가되어 개선"
       }
     ],
     "projectskill": [
@@ -73,16 +83,12 @@
     ],
     "skill": [
       {
-        "name": "React",
-        "description": "2"
-      },
-      {
-        "name": "Joi",
-        "description": "2"
+        "name": "React-Hook-Form/Joi",
+        "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락이 존재하는지 확인하기 위함"
       },
       {
         "name": "GCP",
-        "description": "3"
+        "description": "회사가 기존에 사용한 GCP Compute Engine를 통해 프론트/백엔드 배포를 위해 사용"
       }
     ],
     "thumbnailImage": "/project/afo-logo.png",
@@ -106,14 +112,14 @@
     ],
     "troubleshootings": [
       {
-        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
-        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
-        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
+        "issue": "레거시 성능 이슈 관리자 페이지 기준 - 크롬 Performance 기준 LCP 약 30초, 리소스 요청 1,400개, Lighthouse NO_FCP",
+        "solution": "코드 스플리팅 추가, API에 예외 처리 추가, max-age=300으로 캐싱 적용, 컴포넌트 기능별 분리 등으로 개선",
+        "result": "컴팩트머신 관리자 페이지 기준 - 크롬 Performance 기준 LCP 약 1초, 리소스 요청 50개, Lighthouse 평균 76점으로 개선"
       },
       {
-        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
-        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
-        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
+        "issue": "API 문서화 부재하여 업데이트 등 발생 시 소통에 지연 발생",
+        "solution": "백엔드 진행을 겸임하게 되어 문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
+        "result": "Notion 사용으로 협의 후 필수 값, 요청 값, 성공 시 응답 값 등 을 작성 후 PDF로 하여 팀에게 공유"
       }
     ],
     "projectskill": [
@@ -169,15 +175,11 @@
     "skill": [
       {
         "name": "I18next",
-        "description": "1"
+        "description": "프로젝트의 외국 서비스를 고려하여 한국어 <> 영어 전환 기능을 제공하기 위해 사용"
       },
       {
         "name": "Zustand",
-        "description": "2"
-      },
-      {
-        "name": "GCP",
-        "description": "3"
+        "description": "로그인 상태 관리 목적, 특정 값을 기준으로 조건부 렌더링 하기 위해 사용"
       }
     ],
     "thumbnailImage": "/project/compact-login.png",
@@ -199,14 +201,14 @@
 
     "troubleshootings": [
       {
-        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
-        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
-        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
+        "issue": "API 요청 후 약 10분 전/후 스팀 API에서 access denied 응답",
+        "solution": "초기 모든 게임 할인 리스트 제공 시도 → 사용자는 인지도 있는 게임의 할인 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
+        "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인"
       },
       {
-        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
-        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
-        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
+        "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
+        "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경했으나, 속도 차이가 미약함 확인",
+        "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지"
       }
     ],
     "projectskill": [
@@ -239,6 +241,9 @@
     "projectpart": [
       {
         "name": "프로젝트 관련 모든 부분 전수 진행"
+      },
+      {
+        "name": "배포 후 Google Search Console에 등록하여 구글 검색 결과에 노출 되도록 진행"
       }
     ],
     "skill": [
@@ -255,64 +260,5 @@
     "date": "2025.04 - 2025.05 (약 1개월)",
     "github": "https://github.com/sangil94s/steamrader",
     "deploy": "https://steam-rader.vercel.app/"
-  },
-  "Portfolio": {
-    "title": "Portfolio",
-    "detail": "대리점 정보 조회 백오피스입니다...",
-    "features": [
-      {
-        "name": "반응형 레이아웃 - 모바일, PC 화면 크기 별 최적화"
-      },
-      {
-        "name": "다크모드 - next-themes를 활용한 라이트/다크 모드 전환"
-      }
-    ],
-
-    "troubleshootings": [
-      {
-        "issue": "기존 레거시에서 유효성 검사가 없어 필수 값 누락 시 DB에 저장됨",
-        "solution": "React-Hook-Form과 Joi를 사용하여 프론트와 백엔드 모두에 유효성 검사 로직 추가",
-        "result": "등록 후 3개월간 필수값 누락 건수 0건 유지, 운영팀 수정 요청 건수 없음"
-      },
-      {
-        "issue": "Log 페이지마다 검색, 필터, 페이지네이션 등 기능이 제각각으로 UX 통일성 부족",
-        "solution": "핵심 기능 4개를 정리하여 Table 컴포넌트로 공통화, 전 페이지에 동일 구성 적용",
-        "result": "사용자 혼란 해소, 새로 만든 Log 페이지도 해당 구성 재활용하며 일관성 유지"
-      }
-    ],
-    "projectskill": [
-      {
-        "name": "Next.js (App Router)",
-        "image": "/skill/next.png"
-      },
-      {
-        "name": "Typescript",
-        "image": "/skill/ts.png"
-      },
-      {
-        "name": "TailwindCSS",
-        "image": "/skill/tailwindcss.png"
-      },
-      {
-        "name": "Vercel",
-        "image": "/skill/vercel.svg"
-      }
-    ],
-    "projectpeople": "1인 프로젝트로 전수 담당",
-    "projectpart": [
-      {
-        "name": "프로젝트 관련 모든 부분 전수 진행"
-      }
-    ],
-    "skill": [
-      {
-        "name": "Shadcn",
-        "description": "빠르게 디자인을 구현하고자 사용"
-      }
-    ],
-    "thumbnailImage": "/project/12345.jpg",
-    "date": "2025.07 - 2025.07 (1개월 이내)",
-    "github": "https://github.com/sangil94s/Portfoilos",
-    "deploy": "https://www.fronthan.dev/"
   }
 }

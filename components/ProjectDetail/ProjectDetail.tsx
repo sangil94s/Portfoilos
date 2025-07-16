@@ -37,7 +37,7 @@ export default function ProjectDetail() {
     <>
       <div className="flex flex-col lg:flex-row max-w-screen-xl min-h-screen m-auto my-8 p-4 gap-4">
         <aside className="lg:w-[800px] lg:h-[600px] lg:sticky top-4 space-y-4">
-          <div className="bg-gray-100 rounded-lg p-4 shadow">
+          <div className="bg-gray-50 rounded-lg p-4 shadow">
             <h2 className="text-xl font-bold py-6 dark:text-black">프로젝트 명 : {data?.title}</h2>
             {data?.thumbnailImage && (
               <Image
@@ -101,14 +101,14 @@ export default function ProjectDetail() {
           </div>
 
           {title === 'Compact-Machine' && (
-            <div className="bg-gray-100 rounded-lg h-[200px] flex items-center justify-center text-center dark:text-black">
+            <div className="bg-gray-50 rounded-lg h-[200px] flex items-center justify-center text-center dark:text-black">
               <CompactCarousel />
             </div>
           )}
         </aside>
 
         <main className="lg:w-2/3 w-full space-y-6">
-          <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
+          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">기술 선정 사유</h3>
             {data?.skill?.map(skills => (
               <ul key={skills.name} className="list-disc list-inside space-y-1">
@@ -118,7 +118,7 @@ export default function ProjectDetail() {
             ))}
           </section>
 
-          <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
+          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">주요 기능</h3>
             <ul className="list-disc list-inside space-y-1">
               {data?.features.map(item => (
@@ -129,21 +129,19 @@ export default function ProjectDetail() {
             </ul>
           </section>
 
-          <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2 dark:text-black">
-              트러블 슈팅 - 문제 발생과 해결 - 추후 문제-해결-결과 로 변경 예정
-            </h3>
+          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
+            <h3 className="text-lg font-bold py-2 dark:text-black">문제 발생과 해결</h3>
             <div className="list-disc list-inside space-y-4">
               {data?.troubleshootings.map((item, index) => (
                 <section key={index} className="py-2 dark:text-black">
-                  <p>
-                    <strong>문제 발생:</strong> {item.issue}
+                  <p className="py-2">
+                    <strong>문제</strong> <br /> {item.issue}
                   </p>
-                  <p>
-                    <strong>문제 해결:</strong> {item.solution}
+                  <p className="py-2">
+                    <strong>해결</strong> <br /> {item.solution}
                   </p>
-                  <p>
-                    <strong>결과:</strong> {item.result}
+                  <p className="py-2">
+                    <strong>결과</strong> <br /> {item.result}
                   </p>
                 </section>
               ))}
@@ -151,7 +149,7 @@ export default function ProjectDetail() {
             </div>
           </section>
           {title === 'Compact-Machine' && (
-            <section className="lg:w-[600px] lg:h-max bg-gray-100 p-4 rounded-md">
+            <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
               <h3 className="text-lg font-bold py-2 dark:text-black">APEHEX와 컴팩트머신 비교</h3>
               <CompactTable />
             </section>

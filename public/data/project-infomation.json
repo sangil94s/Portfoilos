@@ -127,34 +127,6 @@
           "image": "/skill/vercel.svg"
         }
       ]
-    },
-    {
-      "id": 4,
-      "title": "Portfolio",
-      "date": "2025.07 - 2025.07 (1개월 이내)",
-      "teamcount": "1인 개인 프로젝트",
-      "description": "Next.js + Typescirpt + TailwindCSS 로 기존 업무 내용을 정리하는 목적의 프로젝트",
-      "techskills": "Next.js App Router, Typescript, TailwindCSS, Vercel",
-      "parts": "프로젝트 전수 진행",
-      "image": "/project/12345.jpg",
-      "useSkillImage": [
-        {
-          "name": "Next.js (App Router)",
-          "image": "/skill/next.png"
-        },
-        {
-          "name": "Typescript",
-          "image": "/skill/ts.png"
-        },
-        {
-          "name": "TailwindCSS",
-          "image": "/skill/tailwindcss.png"
-        },
-        {
-          "name": "Vercel",
-          "image": "/skill/vercel.svg"
-        }
-      ]
     }
   ]
 }

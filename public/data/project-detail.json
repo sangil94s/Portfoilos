@@ -16,17 +16,17 @@
     "troubleshootings": [
       {
         "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 수정 소요 발생",
-        "solution": "레거시는 내부 이슈로 코드 수정 불가 - 해당 프로젝트에서 5개의 Log Page로 축소",
+        "solution": "레거시는 내부 이슈로 코드 수정 불가 - AFO 프로젝트에서 5개의 Log Page로 축소",
         "result": "Log Page마다 불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 통일하여 불 일치성 개선"
       },
       {
         "issue": "레거시의 유효성 검사 누락 - 필요 데이터 누락 검증 수단 부재",
         "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
-        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 POST로 받을 때 필수 값 누락 이 방지 되도록 개선"
+        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 필수 값 누락 이 방지 되도록 개선"
       },
       {
         "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css라는 전역 파일 혼용",
-        "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일 작성을 통일하여 디자인 시스템 개선",
+        "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일을 통일하여 개선",
         "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
       },
       {
@@ -84,7 +84,7 @@
     "skill": [
       {
         "name": "React-Hook-Form/Joi",
-        "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락이 존재하는지 확인하기 위함"
+        "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락을 확인하기 위함"
       },
       {
         "name": "GCP",
@@ -101,25 +101,17 @@
     "detail": "대리점 정보 조회 백오피스입니다...",
     "features": [
       {
-        "name": "한국어, 영어 언어 변경 - I18next로 언어 전환이 가능하도록 구현"
+        "name": "한국어, 영어 변경 - I18next로 언어 전환이 가능하도록 구현"
       },
       {
         "name": "반응형 - FHD 해상도, 갤럭시 S20 Ultra 기준으로 기기별 최적화"
-      },
-      {
-        "name": "UX 기능 통합 - X개의 Log페이지마다 UX를 통일하여 일관된 기능 제공"
       }
     ],
     "troubleshootings": [
       {
-        "issue": "레거시 성능 이슈 관리자 페이지 기준 - 크롬 Performance 기준 LCP 약 30초, 리소스 요청 1,400개, Lighthouse NO_FCP",
-        "solution": "코드 스플리팅 추가, API에 예외 처리 추가, max-age=300으로 캐싱 적용, 컴포넌트 기능별 분리 등으로 개선",
-        "result": "컴팩트머신 관리자 페이지 기준 - 크롬 Performance 기준 LCP 약 1초, 리소스 요청 50개, Lighthouse 평균 76점으로 개선"
-      },
-      {
         "issue": "API 문서화 부재하여 업데이트 등 발생 시 소통에 지연 발생",
-        "solution": "백엔드 진행을 겸임하게 되어 문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
-        "result": "Notion 사용으로 협의 후 필수 값, 요청 값, 성공 시 응답 값 등 을 작성 후 PDF로 하여 팀에게 공유"
+        "solution": "문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
+        "result": "Notion으로 협의 후 필수 값, 요청 값 등 작성 후 PDF로 하여 팀에게 공유"
       }
     ],
     "projectskill": [
@@ -175,7 +167,7 @@
     "skill": [
       {
         "name": "I18next",
-        "description": "프로젝트의 외국 서비스를 고려하여 한국어 <> 영어 전환 기능을 제공하기 위해 사용"
+        "description": "외국 서비스를 고려하여 한국어 <> 영어 전환 기능을 제공하고자 사용"
       },
       {
         "name": "Zustand",
@@ -192,7 +184,7 @@
     "detail": "대리점 정보 조회 백오피스입니다...",
     "features": [
       {
-        "name": "반응형 레이아웃 - 모바일, PC 화면 크기 별 최적화"
+        "name": "반응형 레이아웃 - 모바일 (아이폰 14 Pro Max), PC 화면 크기 별 최적화"
       },
       {
         "name": "필터 - 각 카테고리별 일치하는 데이터만 렌더링"
@@ -202,12 +194,12 @@
     "troubleshootings": [
       {
         "issue": "API 요청 후 약 10분 전/후 스팀 API에서 access denied 응답",
-        "solution": "초기 모든 게임 할인 리스트 제공 시도 → 사용자는 인지도 있는 게임의 할인 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
+        "solution": "초기 모든 할인 게임 제공 시도 → 사용자는 GTA 등 인기 게임 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
         "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인"
       },
       {
         "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
-        "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경했으나, 속도 차이가 미약함 확인",
+        "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경, 속도 차이가 미약함 확인",
         "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지"
       }
     ],
@@ -243,7 +235,7 @@
         "name": "프로젝트 관련 모든 부분 전수 진행"
       },
       {
-        "name": "배포 후 Google Search Console에 등록하여 구글 검색 결과에 노출 되도록 진행"
+        "name": "Google Search Console에 등록하여 구글 검색 결과에 노출 되도록 진행"
       }
     ],
     "skill": [
@@ -253,7 +245,7 @@
       },
       {
         "name": "Prisma",
-        "description": "기존 SQL 쿼리로 작성한 사례와 달리 새로운 ORM 학습 목적"
+        "description": "기존 SQL 쿼리로 진행한 사례와 달리 새로운 ORM 학습 목적"
       }
     ],
     "thumbnailImage": "/project/steamrader-main.png",

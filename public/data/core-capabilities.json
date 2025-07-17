@@ -5,24 +5,24 @@
       "title": "제안과 정착 주도",
       "subtitle": "먼저 문제를 찾고 개선을 제안하거나 도입을 주도합니다.",
       "description": "레거시 개선, 성능 튜닝, UX 개선, API 문서화 등에서 문제를 스스로 찾고 팀 내 정착까지 주도",
-      "descriptiontwo": "TailwindCSS + DaisyUI 도입, 컴포넌트 단위 분리 설계, API 문서화 체계 제안 및 확산 등",
+      "descriptiontwo": "TailwindCSS + DaisyUI 도입, 기능 단위 컴포넌트 분리, API 문서화 체계 제안 등",
       "descriptionthree": "단순히 구현을 넘어서 팀 문화와 구조적 개선에 기여"
     },
     {
       "id": 2,
       "title": "실전 기반 성능 개선 경험",
-      "subtitle": "레거시 (APEHEX) → 컴팩트머신 프로젝트에서 개선했습니다. ",
+      "subtitle": "레거시 (APEHEX) → 컴팩트머신 프로젝트에서 개선했습니다.",
       "description": "LCP 47초 → 1초 / 리소스 1400개 → 50개 / Lighthouse NO_FCP → 76점 개선",
-      "descriptiontwo": "React + Zustand + 캐싱 도입 등으로 레거시 대비 성능 개선",
-      "descriptionthree": "성능 개선 후 배포 이후 7개월간 주 사용부서에서 속도 관련 불만 0건"
+      "descriptiontwo": "React + 코드 스플리팅 + 캐싱 도입 등으로 레거시 대비 성능 개선",
+      "descriptionthree": "MVP 배포 후 7개월간 주 사용부서에서 속도 관련 불만 0건 유지"
     },
     {
       "id": 3,
-      "title": "프론트엔드 + 백엔드 풀스택 실무",
+      "title": "풀스택 실무",
       "subtitle": "프론트엔드와 백엔드를 혼자서 개발을 전담하며 진행했습니다",
-      "description": "React, Typescript, Express, GCP 기반의 2개 프로젝트 단독 개발 및 유지 보수",
-      "descriptiontwo": "Express, SQL 쿼리, GCP를 학습과 동시에 프로젝트에 즉각 적용하며 개발",
-      "descriptionthree": "기획 → 개발 → 배포 전체 주기 경험, 유지 보수 실무 포함"
+      "description": "React, Typescript, Express, GCP 기반의 3개 프로젝트 개발 및 유지 보수",
+      "descriptiontwo": "Express, SQL, GCP를 학습과 동시에 프로젝트에 즉각 적용하며 개발",
+      "descriptionthree": "기획 → 개발 → 배포 경험, 유지 보수 실무 포함"
     }
   ]
 }

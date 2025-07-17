@@ -4,11 +4,12 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-const images = ['/project/12345.jpg', '/project/temp.jpg', '/project/afo-logo.png'];
+const images = ['/project/apehex-lcp.png', '/project/compact-lcp.png', '/project/apehex-resource.png', '/project/compact-resources.png'];
 const texts: Record<(typeof images)[number], string> = {
-  '/project/12345.jpg': 'A 텍스트',
-  '/project/temp.jpg': 'B 텍스트',
-  '/project/afo-logo.png': 'C 텍스트',
+  '/project/apehex-lcp.png': 'APEHEX - 관리자 페이지 LCP',
+  '/project/compact-lcp.png': 'Compact-Machine - 관리자 페이지 LCP',
+  '/project/apehex-resource.png': 'APEHEX - 관리자 페이지 리소스 요청',
+  '/project/compact-resources.png': 'Compact-Machine - 관리자 페이지 리소스 요청',
 };
 export default function CompactCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,11 +35,11 @@ export default function CompactCarousel() {
 
   return (
     <>
-      <div className="w-full max-w-md mx-auto text-center space-y-4">
+      <div className="w-full max-w-md mx-auto my-2 text-center space-y-4">
         <div ref={sliderRef} className="keen-slider rounded-lg overflow-hidden">
           {images.map((src, i) => (
-            <div key={i} className="keen-slider__slide flex justify-center items-center">
-              <Image src={src} alt={`슬라이더`} width={200} height={200} className="m-auto" />
+            <div key={i} className="keen-slider__slide flex justify-center items-center w-full">
+              <Image src={src} alt={`슬라이더`} width={600} height={200} className="m-auto" />
             </div>
           ))}
         </div>

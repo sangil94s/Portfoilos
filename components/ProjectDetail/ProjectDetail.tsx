@@ -100,11 +100,6 @@ export default function ProjectDetail() {
             )}
           </div>
 
-          {title === 'Compact-Machine' && (
-            <div className="bg-gray-50 rounded-lg h-[200px] flex items-center justify-center text-center dark:text-black">
-              <CompactCarousel />
-            </div>
-          )}
         </aside>
 
         <main className="lg:w-2/3 w-full space-y-6">
@@ -148,9 +143,15 @@ export default function ProjectDetail() {
               {/* 스타일 수정 필요 */}
             </div>
           </section>
+           {title === 'Compact-Machine' && (
+            <div className=" flex items-center justify-center text-center dark:text-black">
+              <CompactCarousel />
+            </div>
+          )}
+
           {title === 'Compact-Machine' && (
             <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
-              <h3 className="text-lg font-bold py-2 dark:text-black">APEHEX와 컴팩트머신 비교</h3>
+              <h3 className="text-lg font-bold py-2 dark:text-black">APEHEX와 컴팩트머신 관리자 페이지 기준 비교</h3>
               <CompactTable />
             </section>
           )}

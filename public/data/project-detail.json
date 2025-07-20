@@ -15,21 +15,25 @@
     ],
     "troubleshootings": [
       {
+        "AccordionTrigger": "레거시의 UX 불 일치 건",
         "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치 확인",
         "solution": "레거시는 코드 수정 불가 - AFO 프로젝트에서 5개의 Log Page로 축소",
         "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일"
       },
       {
+        "AccordionTrigger": "유효성 검사 부재로 필수 값 검증 부재",
         "issue": "레거시의 유효성 검사 누락 - 필요 데이터 누락 검증 수단 부재",
         "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
         "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 요청이 필수 값 누락 방지"
       },
       {
+        "AccordionTrigger": "스타일 혼용 - 인라인 스타일 + Bootstrap + css 모두 혼용",
         "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css 모두 혼용",
         "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일을 통일하여 개선",
         "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
       },
       {
+        "AccordionTrigger": "디자인 가이드에 사용 색상 누락 건",
         "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 필요",
         "solution": "디자이너와 협의 과정에서 사용한 색상에 대한 HEX 코드를 추가하여 서로 불필요 소통을 축소하자 협의",
         "result": "이후 AI 파일로 작성된 가이드 또는 해당 메일에 사용 색상에 대한 HEX 코드가 추가되어 개선"
@@ -109,11 +113,13 @@
     ],
     "troubleshootings": [
       {
+        "AccordionTrigger": "API 문서화 부재로 소통 지연 발생",
         "issue": "API 문서화 부재하여 업데이트 등 발생 시 소통에 지연 발생",
         "solution": "문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
         "result": "Notion으로 협의 후 필수 값, 요청 값 등 작성 후 PDF로 하여 팀에게 공유"
       },
       {
+        "AccordionTrigger": "레거시 성능 이슈 확인 건",
         "issue": "레거시 관리자 페이지는 LCP 30~47초, 리소스 요청 1,400개 발생, 실 사용자에게 관련 언급 지속",
         "solution": "캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
         "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 속도 관련 피드백 0건 유지"
@@ -198,11 +204,13 @@
 
     "troubleshootings": [
       {
+        "AccordionTrigger": "API 요청 후 access denied 발생",
         "issue": "API 요청 후 약 10분 전/후 스팀 API에서 access denied 응답",
         "solution": "초기 모든 할인 게임 제공 시도 → 사용자는 GTA 등 인기 게임 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
         "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인"
       },
       {
+        "AccordionTrigger": "API 호출 시 응답 지연 발생",
         "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
         "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경, 속도 차이가 미약함 확인",
         "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지"

@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { ProjectDetailType } from '@/types/typeInfomation';
 import CompactTable from '../ETC/CompactTable';
 import CompactCarousel from './Carousel/CompactCarousel';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
 export default function ProjectDetail() {
   const params = useParams();
@@ -125,22 +126,27 @@ export default function ProjectDetail() {
 
           <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">문제 발생과 해결</h3>
-            <div className="list-disc list-inside space-y-4">
-              {data?.troubleshootings.map((item, index) => (
-                <section key={index} className="py-2 dark:text-black">
-                  <p className="py-2">
-                    <strong>문제</strong> <br /> {item.issue}
-                  </p>
-                  <p className="py-2">
-                    <strong>해결</strong> <br /> {item.solution}
-                  </p>
-                  <p className="py-2">
-                    <strong>결과</strong> <br /> {item.result}
-                  </p>
-                </section>
-              ))}
-              {/* 스타일 수정 필요 */}
-            </div>
+            <Accordion type="multiple" className="space-y-2">
+              <div className="list-disc list-inside space-y-4">
+                {data?.troubleshootings.map((item, index) => (
+                  <AccordionItem key={index} value={`${index}`} className="py-2 dark:text-black">
+                    <AccordionTrigger className='font-bold'>{item.AccordionTrigger}</AccordionTrigger>
+                    <AccordionContent>
+                      <p className="py-2">
+                        <strong>문제</strong> <br /> {item.issue}
+                      </p>
+                      <p className="py-2">
+                        <strong>해결</strong> <br /> {item.solution}
+                      </p>
+                      <p className="py-2">
+                        <strong>결과</strong> <br /> {item.result}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+                {/* 스타일 수정 필요 */}
+              </div>
+            </Accordion>
           </section>
           {title === 'Compact-Machine' && (
             <div className=" flex items-center justify-center text-center dark:text-black">

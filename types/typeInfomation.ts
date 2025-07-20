@@ -1,15 +1,15 @@
-export interface CoreCapabilitiesType {
-  id: number;
+export interface ITypese {
+  id:number;
   title: string;
+}
+export interface CoreCapabilitiesType extends ITypese  {
   subtitle: string;
   description: string;
   descriptiontwo: string;
   descriptionthree?: string;
 }
 
-export interface SkillListType {
-  id: number;
-  title: string;
+export interface SkillListType extends ITypese {
   category: string;
   isInterested: boolean;
   image: string;
@@ -20,15 +20,13 @@ export interface ProjectCardSkillImageType {
   image: string;
 } //components/Project/ProjectCard.tsx
 
-export interface ProjectCardListType {
-  id: number;
-  title: string;
+export interface ProjectCardListType extends ITypese {
   date: string;
   teamcount: string;
   description: string;
   parts: string;
-  image: string;
   useSkillImage: ProjectCardSkillImageType[];
+  image: string;
 } //components/Project/ProjectCard.tsx
 
 /* components/Project/Detail/ProjectDetail.tsx 에서 사용 */
@@ -38,10 +36,7 @@ export interface ITypes {
   issue?: string;
   solution?: string;
   result?: string;
-}
-export interface SkillImage {
-  name: string;
-  image: string;
+  AccordionTrigger?: string
 }
 export interface SkillDescription {
   name: string;
@@ -52,7 +47,7 @@ export interface ProjectDetailType {
   detail: string;
   features: ITypes[];
   troubleshootings: ITypes[];
-  projectskill: SkillImage[];
+  projectskill: ProjectCardSkillImageType[];
   projectpeople: string;
   projectpart: ITypes[];
   skill: SkillDescription[];

@@ -7,7 +7,7 @@
         "name": "유효성 검사 - React-Hook-Form과 Joi로 실시, 필수값 누락을 방지"
       },
       {
-        "name": "반응형 - FHD 해상도, 갤럭시 S20 Ultra 기준으로 기기별 최적화"
+        "name": "반응형 - FHD 해상도, 아이폰 14 Pro Max 기준으로 기기별 최적화"
       },
       {
         "name": "UX 기능 통합 - Log 페이지마다 UX가 불 일치하는 문제 개선"
@@ -15,17 +15,17 @@
     ],
     "troubleshootings": [
       {
-        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 수정 소요 발생",
-        "solution": "레거시는 내부 이슈로 코드 수정 불가 - AFO 프로젝트에서 5개의 Log Page로 축소",
-        "result": "Log Page마다 불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 통일하여 불 일치성 개선"
+        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치 확인",
+        "solution": "레거시는 코드 수정 불가 - AFO 프로젝트에서 5개의 Log Page로 축소",
+        "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일"
       },
       {
         "issue": "레거시의 유효성 검사 누락 - 필요 데이터 누락 검증 수단 부재",
         "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
-        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 필수 값 누락 이 방지 되도록 개선"
+        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 요청이 필수 값 누락 방지"
       },
       {
-        "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css라는 전역 파일 혼용",
+        "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css 모두 혼용",
         "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일을 통일하여 개선",
         "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
       },
@@ -84,11 +84,11 @@
     "skill": [
       {
         "name": "React-Hook-Form/Joi",
-        "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락을 확인하기 위함"
+        "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락 확인 목적"
       },
       {
         "name": "GCP",
-        "description": "회사가 기존에 사용한 GCP Compute Engine를 통해 프론트/백엔드 배포를 위해 사용"
+        "description": "회사가 기존에 사용한 GCP Compute Engine로 배포 목적으로 사용"
       }
     ],
     "thumbnailImage": "/project/afo-logo.png",
@@ -112,6 +112,11 @@
         "issue": "API 문서화 부재하여 업데이트 등 발생 시 소통에 지연 발생",
         "solution": "문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
         "result": "Notion으로 협의 후 필수 값, 요청 값 등 작성 후 PDF로 하여 팀에게 공유"
+      },
+      {
+        "issue": "레거시 관리자 페이지는 LCP 30~47초, 리소스 요청 1,400개 발생, 실 사용자에게 관련 언급 지속",
+        "solution": "캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
+        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 속도 관련 피드백 0건 유지"
       }
     ],
     "projectskill": [
@@ -167,7 +172,7 @@
     "skill": [
       {
         "name": "I18next",
-        "description": "외국 서비스를 고려하여 한국어 <> 영어 전환 기능을 제공하고자 사용"
+        "description": "외국 서비스를 고려하여 한국어 ↔ 영어 전환 기능을 제공하고자 사용"
       },
       {
         "name": "Zustand",

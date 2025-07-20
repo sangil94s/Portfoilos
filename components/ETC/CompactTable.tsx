@@ -50,8 +50,8 @@ export default function CompactTable() {
       item: '서비스 국가',
       old: '미국 전체 + 캐나다 일부',
       new: '한국',
-      note: '', 
-    }
+      note: '',
+    },
   ];
   return (
     <>

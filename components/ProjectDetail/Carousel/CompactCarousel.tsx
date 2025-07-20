@@ -4,12 +4,17 @@ import 'keen-slider/keen-slider.min.css';
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-const images = ['/project/apehex-lcp.png', '/project/compact-lcp.png', '/project/apehex-resource.png', '/project/compact-resources.png'];
+const images = [
+  '/project/apehex-lcp.png',
+  '/project/compact-lcp.png',
+  '/project/apehex-resource.png',
+  '/project/compact-resources.png',
+];
 const texts: Record<(typeof images)[number], string> = {
-  '/project/apehex-lcp.png': 'APEHEX - 관리자 페이지 LCP',
-  '/project/compact-lcp.png': 'Compact-Machine - 관리자 페이지 LCP',
-  '/project/apehex-resource.png': 'APEHEX - 관리자 페이지 리소스 요청',
-  '/project/compact-resources.png': 'Compact-Machine - 관리자 페이지 리소스 요청',
+  '/project/apehex-lcp.png': '↑ APEHEX - 관리자 페이지 LCP',
+  '/project/compact-lcp.png': '↑ Compact-Machine - 관리자 페이지 LCP',
+  '/project/apehex-resource.png': '↑ APEHEX - 관리자 페이지 리소스 요청 - 약 1,400건',
+  '/project/compact-resources.png': '↑ Compact-Machine - 관리자 페이지 리소스 요청 - 약 40건',
 };
 export default function CompactCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,7 +49,7 @@ export default function CompactCarousel() {
           ))}
         </div>
 
-        <p className="text-lg font-medium">{currentText}</p>
+        <p className="text-base font-bold">{currentText}</p>
       </div>
     </>
   );

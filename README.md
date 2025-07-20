@@ -14,7 +14,7 @@
 
 - [바로가기](https://www.fronthan.dev/)
 
-- [favicon 출처](https://www.flaticon.com/kr/free-icon/settings_148913?related_id=148913&origin=pack)
+- [favicon 출처](https://www.flaticon.com/free-icon/education_4696916?related_id=4696916&origin=pack)
 
 ---
 

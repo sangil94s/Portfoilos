@@ -10,7 +10,7 @@
         "name": "반응형 - FHD 해상도, 아이폰 14 Pro Max 기준으로 기기별 최적화"
       },
       {
-        "name": "UX 기능 통합 - Log 페이지마다 UX가 불 일치하는 문제 개선"
+        "name": "UX 통합 - UX가 불 일치하는 문제를 CSV 다운로드 등 4개 기능 만 배치하며 개선"
       }
     ],
     "troubleshootings": [
@@ -27,16 +27,16 @@
         "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 요청이 필수 값 누락 방지"
       },
       {
-        "AccordionTrigger": "스타일 혼용 - 인라인 스타일 + Bootstrap + css 모두 혼용",
+        "AccordionTrigger": "인라인 스타일 + Bootstrap + css 모두 혼용",
         "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css 모두 혼용",
         "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일을 통일하여 개선",
         "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
       },
       {
         "AccordionTrigger": "디자인 가이드에 사용 색상 누락 건",
-        "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 필요",
-        "solution": "디자이너와 협의 과정에서 사용한 색상에 대한 HEX 코드를 추가하여 서로 불필요 소통을 축소하자 협의",
-        "result": "이후 AI 파일로 작성된 가이드 또는 해당 메일에 사용 색상에 대한 HEX 코드가 추가되어 개선"
+        "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 발생",
+        "solution": "디자이너와 협의 과정에서 사용 색상에 대해 가이드에 Hex 코드 추가 or 발신 메일에 언급 중 하나로 제안, 가이드에 추가로 협의",
+        "result": "가이드 파일에 사용 색상에 대한 HEX 코드가 추가되어 불 필요 소통이 축소"
       }
     ],
     "projectskill": [
@@ -86,6 +86,10 @@
       }
     ],
     "skill": [
+      {
+        "name": "TailwindCSS + DaisyUI",
+        "description": "레거시에서 인라인 스타일 + Bootstrap + 전역 CSS 혼용하는 사례 개선 목적"
+      },
       {
         "name": "React-Hook-Form/Joi",
         "description": "프론트/백엔드 각각 유효성 검사를 실시하여 필수 값 누락 확인 목적"
@@ -176,6 +180,7 @@
       }
     ],
     "skill": [
+      
       {
         "name": "I18next",
         "description": "외국 서비스를 고려하여 한국어 ↔ 영어 전환 기능을 제공하고자 사용"
@@ -199,6 +204,9 @@
       },
       {
         "name": "필터 - 각 카테고리별 일치하는 데이터만 렌더링"
+      },
+      {
+        "name": "API 기능 - Steam의 API를 사용하여, 만족하는 조건에 데이터만 Supabase에 저장"
       }
     ],
 
@@ -214,6 +222,12 @@
         "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
         "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경, 속도 차이가 미약함 확인",
         "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지"
+      },
+      {
+        "AccordionTrigger": "Google Search Console 등록 후 총 노출 수 저조",
+        "issue": "배포 후 총 노출 수 저조, 개선이 필요하다 판단",
+        "solution": "Metadata.title이 Steamrader로 유입 키워드 부족 → 스팀 할인 정보 등 유입 키워드로 변경",
+        "result": "기존 총 노출 수 5건 이하 → 약 40건으로 증가, SEO의 중요성을 인지하고 개발하게 됨"
       }
     ],
     "projectskill": [
@@ -252,6 +266,10 @@
       }
     ],
     "skill": [
+      {
+        "name": "Next.js",
+        "description": "기존 Express로 API 작성 → Next.js로 풀스택 개발과 App Router 학습 목적"
+      },
       {
         "name": "Supabase",
         "description": "미 사용해본 Supabase를 사용하여 데이터를 저장하는 목적으로만 사용"

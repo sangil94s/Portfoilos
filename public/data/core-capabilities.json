@@ -4,7 +4,7 @@
       "id": 1,
       "title": "제안과 정착 주도",
       "subtitle": "먼저 문제를 찾고 개선을 제안하거나 도입을 주도합니다.",
-      "description": "레거시 개선, 성능 튜닝, UX 개선, API 문서화 등에서 문제를 스스로 찾고 팀 내 정착까지 주도",
+      "description": "레거시 개선, UX 개선, API 문서화 등에서 문제를 스스로 찾고 개선 주도",
       "descriptiontwo": "TailwindCSS + DaisyUI 도입, 기능 단위 컴포넌트 분리, API 문서화 체계 제안 등",
       "descriptionthree": "단순히 구현을 넘어서 팀 문화와 구조적 개선에 기여"
     },

@@ -49,7 +49,7 @@
       "title": "Compact-Machine",
       "date": "2024.01 - 2025.03 (약 1년 2개월)",
       "teamcount": "7명 회사 프로젝트",
-      "description": "국내 약 180개 대리점의 생산 등 데이터를 내부 부서가 조회와 활용 목적의 백오피스 프로젝트",
+      "description": "국내 약 180개 대리점의 생산 등 데이터를 내부 부서가 조회 + 활용 목적의 백오피스 프로젝트",
       "techskills": "React, Typescript, TailwindCSS, Tanstack/React-Query, React-Hook-Form, Express, MySQL, GCP",
       "parts": "유일한 풀스택 개발, GCP 배포 전담 ",
       "image": "/project/compact-login.png",

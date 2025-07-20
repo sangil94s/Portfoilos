@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Footers from '@/components/Layout/Footer';
 import Headers from '@/components/Layout/Header';
 import ButtonGroup from '@/components/ButtonGroup/ButtonGroup';
 import { ThemeProvider } from '@/components/util/theme-provider';
@@ -61,7 +60,6 @@ export default function RootLayout({
           <main className="flex-1">{children}</main>
 
           <ButtonGroup />
-          <Footers />
         </ThemeProvider>
       </body>
     </html>

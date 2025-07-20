@@ -1,7 +1,7 @@
 {
   "AFO": {
     "title": "AFO",
-    "detail": "AFO 프로젝트는 UX를 개선하며 백오피스를 재구축한 프로젝트입니다...",
+    "detail": "레거시의 EJS → React 변경 + 성능 등 이슈 개선 + UX 개선 목적의 프로젝트",
     "features": [
       {
         "name": "유효성 검사 - React-Hook-Form과 Joi로 실시, 필수값 누락을 방지"
@@ -10,26 +10,26 @@
         "name": "반응형 - FHD 해상도, 아이폰 14 Pro Max 기준으로 기기별 최적화"
       },
       {
-        "name": "UX 통합 - UX가 불 일치하는 문제를 CSV 다운로드 등 4개 기능 만 배치하며 개선"
+        "name": "UX 통합 - UX 미 일치 문제를 CSV 다운로드 등 4개 기능 만 배치하며 개선"
       }
     ],
     "troubleshootings": [
       {
-        "AccordionTrigger": "레거시의 UX 불 일치 건",
-        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치 확인",
-        "solution": "레거시는 코드 수정 불가 - AFO 프로젝트에서 5개의 Log Page로 축소",
-        "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일"
+        "AccordionTrigger": "UX 불 일치를 AFO 프로젝트에서 개선 건",
+        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 이슈 접수됨",
+        "solution": "PM, 관련 부서와 협의하여 배포 후 불필요한 4개의 Log Page 확인과 UX 배치 기능 협의 → AFO 프로젝트에서 5개의 Log Page로 축소",
+        "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일하여 개선"
       },
       {
-        "AccordionTrigger": "유효성 검사 부재로 필수 값 검증 부재",
-        "issue": "레거시의 유효성 검사 누락 - 필요 데이터 누락 검증 수단 부재",
+        "AccordionTrigger": "유효성 검사 누락 개선 건",
+        "issue": "레거시의 유효성 검사 누락 - 계약 담당자의 연락처 등 필수 값 누락 확인 방법 부재",
         "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
-        "result": "API 문서에 업데이트 후 공유하여 생산량 데이터 등 요청이 필수 값 누락 방지"
+        "result": "누락된 기존 사례에서 → 생산량 데이터 등 API에서 필수 값 누락 후 요청되는 사례 개선"
       },
       {
-        "AccordionTrigger": "인라인 스타일 + Bootstrap + css 모두 혼용",
-        "issue": "레거시 스타일 혼용 - 인라인 스타일 + Bootstrap + Apehex.css 모두 혼용",
-        "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일을 통일하여 개선",
+        "AccordionTrigger": "인라인 스타일 + Bootstrap + CSS 혼용 개선 건",
+        "issue": "레거시의 스타일 혼용 - 인라인 스타일 + Bootstrap + 3만 줄의 CSS 모두 혼용",
+        "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일 일원화",
         "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
       },
       {
@@ -88,7 +88,7 @@
     "skill": [
       {
         "name": "TailwindCSS + DaisyUI",
-        "description": "레거시에서 인라인 스타일 + Bootstrap + 전역 CSS 혼용하는 사례 개선 목적"
+        "description": "레거시의 인라인 스타일 + Bootstrap + 전역 CSS 혼용 사례 개선 목적"
       },
       {
         "name": "React-Hook-Form/Joi",
@@ -106,7 +106,7 @@
   },
   "Compact-Machine": {
     "title": "Compact-Machine",
-    "detail": "대리점 정보 조회 백오피스입니다...",
+    "detail": "레거시의 이슈를 참고하고 개선하며 구축한 백오피스 프로젝트입니다.",
     "features": [
       {
         "name": "한국어, 영어 변경 - I18next로 언어 전환이 가능하도록 구현"
@@ -118,15 +118,15 @@
     "troubleshootings": [
       {
         "AccordionTrigger": "API 문서화 부재로 소통 지연 발생",
-        "issue": "API 문서화 부재하여 업데이트 등 발생 시 소통에 지연 발생",
-        "solution": "문서화가 필요하다 판단, 팀과 Swagger와 Notion 중 선택으로 협의",
-        "result": "Notion으로 협의 후 필수 값, 요청 값 등 작성 후 PDF로 하여 팀에게 공유"
+        "issue": "API 문서화 부재하여 소통에 지연 발생한 사례가 존재",
+        "solution": "문서화가 필요성 확인 후, 팀에 문서화를 제안했고, Swagger와 Notion 중 선택으로 협의",
+        "result": "Notion 사용으로 결정된 후 필수 값, 요청 값 등 작성 → PDF로 팀과 공유/최신화 전담"
       },
       {
-        "AccordionTrigger": "레거시 성능 이슈 확인 건",
-        "issue": "레거시 관리자 페이지는 LCP 30~47초, 리소스 요청 1,400개 발생, 실 사용자에게 관련 언급 지속",
-        "solution": "캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
-        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 속도 관련 피드백 0건 유지"
+        "AccordionTrigger": "레거시 성능 이슈 건",
+        "issue": "Performance 탭 기준 LCP 약 30초, 리소스 요청 1,400개 발생, 실 사용자의 관련 언급 지속",
+        "solution": "max-age=300 등 캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
+        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 실 사용자의 속도 관련 피드백 0건 유지"
       }
     ],
     "projectskill": [
@@ -197,7 +197,7 @@
   },
   "Steamrader": {
     "title": "Steamrader",
-    "detail": "대리점 정보 조회 백오피스입니다...",
+    "detail": "Steam의 API를 사용하여 인기 게임의 할인 리스트를 보여주는 프로젝트입니다.",
     "features": [
       {
         "name": "반응형 레이아웃 - 모바일 (아이폰 14 Pro Max), PC 화면 크기 별 최적화"
@@ -206,7 +206,7 @@
         "name": "필터 - 각 카테고리별 일치하는 데이터만 렌더링"
       },
       {
-        "name": "API 기능 - Steam의 API를 사용하여, 만족하는 조건에 데이터만 Supabase에 저장"
+        "name": "API 기능 - Steam의 API를 사용, 조건에 일치한 데이터만 Supabase에 저장"
       }
     ],
 

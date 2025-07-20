@@ -71,6 +71,9 @@ export default function ProjectDetail() {
             <h3 className="py-6 text-lg font-bold dark:text-black">진행 기간</h3>
             <p className="text-xs lg:text-base dark:text-black">{data?.date}</p>
 
+            <h3 className="py-6 text-lg font-bold dark:text-black">진행 목적</h3>
+            <p className="text-xs lg:text-base dark:text-black">{data?.detail}</p>
+
             <h3 className="py-6 text-lg font-bold dark:text-black">담당 역할</h3>
             {data?.projectpart.map(item => (
               <ul key={item.name} className="list-disc list-inside space-y-1">

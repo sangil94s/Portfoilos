@@ -1,8 +1,8 @@
 export interface ITypese {
-  id:number;
+  id: number;
   title: string;
 }
-export interface CoreCapabilitiesType extends ITypese  {
+export interface CoreCapabilitiesType extends ITypese {
   subtitle: string;
   description: string;
   descriptiontwo: string;
@@ -34,9 +34,13 @@ export interface ProjectCardListType extends ITypese {
 export interface ITypes {
   name: string;
   issue?: string;
-  solution?: string;
-  result?: string;
-  AccordionTrigger?: string
+  solution: string;
+  solutiontwo?: string;
+  solutionthree?: string;
+  result: string;
+  resulttwo?: string;
+  resultthree?: string;
+  AccordionTrigger?: string;
 }
 export interface SkillDescription {
   name: string;

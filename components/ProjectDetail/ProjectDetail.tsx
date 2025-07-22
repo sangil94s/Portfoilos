@@ -128,22 +128,36 @@ export default function ProjectDetail() {
           </section>
 
           <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
-            <h3 className="text-lg font-bold py-2 dark:text-black">문제 발생과 해결 {title === "AFO" && "- AFO"} {title === 'Compact-Machine' && '- Compact-Machine'}</h3>
+            <h3 className="text-lg font-bold py-2 dark:text-black">
+              문제 발생과 해결 {title === 'AFO' && '- AFO'}{' '}
+              {title === 'Compact-Machine' && '- Compact-Machine'}
+            </h3>
             <Accordion type="multiple" className="space-y-2">
-              <div className="list-disc list-inside space-y-4">
+              <div className="space-y-4">
                 {data?.troubleshootings.map((item, index) => (
                   <AccordionItem key={index} value={`${index}`} className="py-2 dark:text-black">
-                    <AccordionTrigger className='font-bold cursor-pointer'>{item.AccordionTrigger}</AccordionTrigger>
+                    <AccordionTrigger className="font-bold cursor-pointer">
+                      {item.AccordionTrigger}
+                    </AccordionTrigger>
                     <AccordionContent>
-                      <p className="py-4">
-                        <strong>문제</strong> <br /> {item.issue}
-                      </p>
-                      <p className="py-4">
-                        <strong>해결</strong> <br /> {item.solution}
-                      </p>
-                      <p className="py-4">
-                        <strong>결과</strong> <br /> {item.result}
-                      </p>
+                      <section className="py-4">
+                        <h1 className="font-bold py-1">문제</h1>
+                        <p className="py-1">{item.issue}</p>
+                      </section>
+                      <section className="py-4">
+                        <h1 className="font-bold py-1">해결</h1>
+                        <p className="py-2">{item.solution}</p>
+                        <p className="py-2">{item.solutiontwo !== null && item.solutiontwo}</p>
+                        <p className="py-2">{item.solutionthree !== null && item.solutionthree}</p>
+
+                        {/* solutiontwo, three 있을 경우만 보여지도록 조건부 렌더링 추가. */}
+                      </section>
+                      <section className="py-4">
+                        <h1 className="font-bold py-1">결과</h1>
+                        <p className="py-2">{item.result}</p>
+                        <p className="py-2">{item.resulttwo !== null && item.resulttwo}</p>
+                        <p className="py-2">{item.resultthree !== null && item.resultthree}</p>
+                      </section>
                     </AccordionContent>
                   </AccordionItem>
                 ))}

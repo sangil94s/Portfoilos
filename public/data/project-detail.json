@@ -18,25 +18,41 @@
         "AccordionTrigger": "UX 불 일치를 AFO 프로젝트에서 개선 건",
         "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 이슈 접수됨",
         "solution": "PM, 관련 부서와 협의하여 배포 후 불필요한 4개의 Log Page 확인과 UX 배치 기능 협의 → AFO 프로젝트에서 5개의 Log Page로 축소",
-        "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일하여 개선"
+        "solutiontwo": "1",
+        "solutionthree": "",
+        "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일하여 개선",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "유효성 검사 누락 개선 건",
         "issue": "레거시의 유효성 검사 누락 - 계약 담당자의 연락처 등 필수 값 누락 확인 방법 부재",
         "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
-        "result": "누락된 기존 사례에서 → 생산량 데이터 등 API에서 필수 값 누락 후 요청되는 사례 개선"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "누락된 기존 사례에서 → 생산량 데이터 등 API에서 필수 값 누락 후 요청되는 사례 개선",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "인라인 스타일 + Bootstrap + CSS 혼용 개선 건",
         "issue": "레거시의 스타일 혼용 - 인라인 스타일 + Bootstrap + 3만 줄의 CSS 모두 혼용",
         "solution": "AFO 프로젝트부터 스타일을 TailwindCSS + DaisyUI 로 스타일 일원화",
-        "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "여러 스타일 혼용으로 인한 유지 보수 난이도 상승하던 기존 사례 개선",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "디자인 가이드에 사용 색상 누락 건",
         "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 발생",
         "solution": "디자이너와 협의 과정에서 사용 색상에 대해 가이드에 Hex 코드 추가 or 발신 메일에 언급 중 하나로 제안, 가이드에 추가로 협의",
-        "result": "가이드 파일에 사용 색상에 대한 HEX 코드가 추가되어 불 필요 소통이 축소"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "가이드 파일에 사용 색상에 대한 HEX 코드가 추가되어 불 필요 소통이 축소",
+        "resulttwo": "",
+        "resultthree": ""
       }
     ],
     "projectskill": [
@@ -120,13 +136,21 @@
         "AccordionTrigger": "API 문서화 부재로 소통 지연 발생",
         "issue": "API 문서화 부재하여 소통에 지연 발생한 사례가 존재",
         "solution": "문서화가 필요성 확인 후, 팀에 문서화를 제안했고, Swagger와 Notion 중 선택으로 협의",
-        "result": "Notion 사용으로 결정된 후 필수 값, 요청 값 등 작성 → PDF로 팀과 공유/최신화 전담"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "Notion 사용으로 결정된 후 필수 값, 요청 값 등 작성 → PDF로 팀과 공유/최신화 전담",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "레거시 성능 이슈 건",
         "issue": "Performance 탭 기준 LCP 약 30초, 리소스 요청 1,400개 발생, 실 사용자의 관련 언급 지속",
         "solution": "max-age=300 등 캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
-        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 실 사용자의 속도 관련 피드백 0건 유지"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 실 사용자의 속도 관련 피드백 0건 유지",
+        "resulttwo": "",
+        "resultthree": ""
       }
     ],
     "projectskill": [
@@ -180,7 +204,6 @@
       }
     ],
     "skill": [
-      
       {
         "name": "I18next",
         "description": "외국 서비스를 고려하여 한국어 ↔ 영어 전환 기능을 제공하고자 사용"
@@ -215,19 +238,31 @@
         "AccordionTrigger": "API 요청 후 access denied 발생",
         "issue": "API 요청 후 약 10분 전/후 스팀 API에서 access denied 응답",
         "solution": "초기 모든 할인 게임 제공 시도 → 사용자는 GTA 등 인기 게임 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
-        "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "API 호출 시 응답 지연 발생",
         "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
         "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경, 속도 차이가 미약함 확인",
-        "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "무조건 Vercel 배포보단, 필요시 Cold Start 영향받지 않기 위해 AWS/GCP 등 타 플랫폼에서 배포 필요성 인지",
+        "resulttwo": "",
+        "resultthree": ""
       },
       {
         "AccordionTrigger": "Google Search Console 등록 후 총 노출 수 저조",
         "issue": "배포 후 총 노출 수 저조, 개선이 필요하다 판단",
         "solution": "Metadata.title이 Steamrader로 유입 키워드 부족 → 스팀 할인 정보 등 유입 키워드로 변경",
-        "result": "기존 총 노출 수 5건 이하 → 약 40건으로 증가, SEO의 중요성을 인지하고 개발하게 됨"
+        "solutiontwo": "",
+        "solutionthree": "",
+        "result": "기존 총 노출 수 5건 이하 → 약 40건으로 증가, SEO의 중요성을 인지하고 개발하게 됨",
+        "resulttwo": "",
+        "resultthree": ""
       }
     ],
     "projectskill": [

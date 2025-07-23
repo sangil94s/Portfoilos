@@ -146,17 +146,20 @@ export default function ProjectDetail() {
                       </section>
                       <section className="py-4">
                         <h1 className="font-bold py-1">해결</h1>
-                        <p className="py-2">{item.solution}</p>
-                        <p className="py-2">{item.solutiontwo !== null && item.solutiontwo}</p>
-                        <p className="py-2">{item.solutionthree !== null && item.solutionthree}</p>
-
+                        <ul className='list-disc list-inside'>
+                        <li className="py-2">{item.solution}</li>
+                        {item.solutiontwo && <li className="py-2">{item.solutiontwo}</li>}
+                        {item.solutionthree && <li className="py-2">{item.solutionthree}</li>}
+                        </ul>
                         {/* solutiontwo, three 있을 경우만 보여지도록 조건부 렌더링 추가. */}
                       </section>
                       <section className="py-4">
                         <h1 className="font-bold py-1">결과</h1>
-                        <p className="py-2">{item.result}</p>
-                        <p className="py-2">{item.resulttwo !== null && item.resulttwo}</p>
-                        <p className="py-2">{item.resultthree !== null && item.resultthree}</p>
+                        <ul className='list-disc list-inside'>
+                        <li className="py-2">{item.result}</li>
+                        {item.resulttwo && <li className="py-2">{item.resulttwo}</li>}
+                        {item.resultthree && <li className="py-2">{item.resultthree}</li>}
+                        </ul>
                       </section>
                     </AccordionContent>
                   </AccordionItem>

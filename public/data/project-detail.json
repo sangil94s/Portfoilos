@@ -15,22 +15,22 @@
     ],
     "troubleshootings": [
       {
-        "AccordionTrigger": "UX 불 일치를 AFO 프로젝트에서 개선 건",
-        "issue": "레거시의 UX 불 일치 - 관리자 페이지의 9개 Log Page에 UX 불일치로 이슈 접수됨",
-        "solution": "PM, 관련 부서와 협의하여 배포 후 불필요한 4개의 Log Page 확인과 UX 배치 기능 협의 → AFO 프로젝트에서 5개의 Log Page로 축소",
-        "solutiontwo": "1",
+        "AccordionTrigger": "UI/UX 불 일치를 AFO 프로젝트에서 개선 건",
+        "issue": "레거시의 UI/UX 불 일치 - 9개 Log Page에 UX 불일치 와 표/카드 등 불 일치로 일관성 부족",
+        "solution": "PM, 관련 부서와 협의하여 배포 후 불필요한 4개의 Log Page 제거와 UX 배치 기능 협의 → AFO 프로젝트에서 5개의 Log Page로 축소",
+        "solutiontwo": "PM과 협의 시 AFO 프로젝트에선 모든 Log Page에 표 형태로 통일해도 무방함을 협의 후 UI 통일",
         "solutionthree": "",
         "result": "불 일치한 UX를 → CSV 다운로드, 페이지네이션, 필터, 검색 4개로 UX 통일하여 개선",
-        "resulttwo": "",
+        "resulttwo": "불 일치한 UI를 → 협의 후 모두 표 형태로 통합하며 일관성 확보",
         "resultthree": ""
       },
       {
         "AccordionTrigger": "유효성 검사 누락 개선 건",
         "issue": "레거시의 유효성 검사 누락 - 계약 담당자의 연락처 등 필수 값 누락 확인 방법 부재",
-        "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 설정된 필수 값 누락이 없을 경우만 DB 등록",
-        "solutiontwo": "",
-        "solutionthree": "",
-        "result": "누락된 기존 사례에서 → 생산량 데이터 등 API에서 필수 값 누락 후 요청되는 사례 개선",
+        "solution": "React-Hook-Form, Joi로 프론트/백엔드 각각 유효성 검사 도입, 필수 값 누락이 없을 경우만 DB 등록",
+        "solutiontwo": "React-Hook-Form을 사용하여 required, minLength로 필수 값 확인, 누락 시 빨간색 텍스트로 사용자 인지",
+        "solutionthree": "Express + Joi로 API 작성 시 string.min.required 등 필수 값 설정, 누락 시 400 에러 응답 ",
+        "result": "프론트/백엔드 유효성 검사 부재한 기존 사례에서 → 생산량 데이터 등 API에서 필수 값 누락 후 요청되는 사례 개선",
         "resulttwo": "",
         "resultthree": ""
       },
@@ -45,10 +45,10 @@
         "resultthree": ""
       },
       {
-        "AccordionTrigger": "디자인 가이드에 사용 색상 누락 건",
+        "AccordionTrigger": "디자인 가이드에 사용 색상 누락 협의 후 개선 건",
         "issue": "디자인 가이드 (AI 파일)에 사용 색상 정보 누락되어 정확한 색상 확인 위한 불필요 소통 추가 발생",
-        "solution": "디자이너와 협의 과정에서 사용 색상에 대해 가이드에 Hex 코드 추가 or 발신 메일에 언급 중 하나로 제안, 가이드에 추가로 협의",
-        "solutiontwo": "",
+        "solution": "사용 색상에 대해 가이드에 Hex 코드 추가로 서로 불필요 소통을 축소하고 업무 집중을 제안",
+        "solutiontwo": "프로젝트를 같이 진행하는 디자이너도 동의하여 사용 색상에 대한 HEX 코드 추가를 합의",
         "solutionthree": "",
         "result": "가이드 파일에 사용 색상에 대한 HEX 코드가 추가되어 불 필요 소통이 축소",
         "resulttwo": "",
@@ -135,22 +135,22 @@
       {
         "AccordionTrigger": "API 문서화 부재로 소통 지연 발생",
         "issue": "API 문서화 부재하여 소통에 지연 발생한 사례가 존재",
-        "solution": "문서화가 필요성 확인 후, 팀에 문서화를 제안했고, Swagger와 Notion 중 선택으로 협의",
-        "solutiontwo": "",
-        "solutionthree": "",
+        "solution": "개발팀 간 원활한 소통을 위해 문서화가 필요하다 판단하여 먼저 제안.",
+        "solutiontwo": "팀 내부에서 문서화에 대해 긍정적이나 Swagger과 Notion 중 뭘 선택할 건지에 대한 차이가 존재.",
+        "solutionthree": "선정된 서비스로 백엔드를 병행하는 겸 문서화/최신화를 전담하겠다 제안.",
         "result": "Notion 사용으로 결정된 후 필수 값, 요청 값 등 작성 → PDF로 팀과 공유/최신화 전담",
         "resulttwo": "",
         "resultthree": ""
       },
       {
-        "AccordionTrigger": "레거시 성능 이슈 건",
-        "issue": "Performance 탭 기준 LCP 약 30초, 리소스 요청 1,400개 발생, 실 사용자의 관련 언급 지속",
-        "solution": "max-age=300 등 캐싱 도입, 코드 스플리팅, 예외 처리, 기능 단위 컴포넌트 분리 등 리팩토링 진행",
-        "solutiontwo": "",
-        "solutionthree": "",
-        "result": "LCP 1초 이하, 리소스 요청 50개 미만으로 최적화, MVP 배포 이후 7개월간 실 사용자의 속도 관련 피드백 0건 유지",
-        "resulttwo": "",
-        "resultthree": ""
+        "AccordionTrigger": "레거시 성능 이슈를 Compact-Machine에서 개선 건",
+        "issue": "Performance 탭 기준 LCP 약 30초, 리소스 요청 1,400개 발생, Lighthouse NO_FCP 등 성능 이슈로 실 사용자의 관련 언급 지속",
+        "solution": "loadable-component로 코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 부재한 부분 개선",
+        "solutiontwo": "Log Page에 GET API에 기존에 없던 max-age=300로 캐싱을 적용",
+        "solutionthree": "기존에 없던 try/catch로 예외 처리 추가, 예상외 상황에서 PM2가 계속 재시작 하는 기존 사례 개선",
+        "result": "LCP 1초 이하, 리소스 요청 50개 미만, Lighthouse를 Desktop 3회 평균 76점으로 성능 개선",
+        "resulttwo": "MVP 배포 후, 서비스의 주 사용부서의 팀장을 통해 팀 내부에서 7개월간 속도 관련 불만 0건 유지",
+        "resultthree": "이후 주 사용부서에 요청에 따라 추가 기능 구현과, 모바일 반응형 개선 진행"
       }
     ],
     "projectskill": [
@@ -236,8 +236,8 @@
     "troubleshootings": [
       {
         "AccordionTrigger": "API 요청 후 access denied 발생",
-        "issue": "API 요청 후 약 10분 전/후 스팀 API에서 access denied 응답",
-        "solution": "초기 모든 할인 게임 제공 시도 → 사용자는 GTA 등 인기 게임 위주로 찾는다 판단 후 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
+        "issue": "API 요청 후 약 10분간 스팀 API에서 access denied 응답",
+        "solution": "초기 모든 할인 게임 제공 시도 → GTA 등 인기 게임 위주로 볼 것이라 예상 → 15% 이상 할인 + 리뷰 5,000건 이상의 게임 약 150개만 제공으로 수정",
         "solutiontwo": "",
         "solutionthree": "",
         "result": "Steam의 할인 시 API 호출하여 DB 업데이트 → access denied 미 발생 확인",
@@ -245,7 +245,7 @@
         "resultthree": ""
       },
       {
-        "AccordionTrigger": "API 호출 시 응답 지연 발생",
+        "AccordionTrigger": "배포 후 API 호출 시 응답 지연 발생",
         "issue": "CSR로 API 호출 시 응답 지연(1초 이상) 발생",
         "solution": "CSR → SSR 변경과 Vercel 리전을 워싱턴 DC → 서울로 변경, 속도 차이가 미약함 확인",
         "solutiontwo": "",

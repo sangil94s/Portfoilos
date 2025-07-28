@@ -65,16 +65,16 @@ export default function ProjectDetail() {
               ))}
             </div>
 
-            <h3 className="py-6 text-lg font-bold dark:text-black">참가 인원</h3>
-            <p className="underline text-xs lg:text-base dark:text-black">{data?.projectpeople}</p>
+            <h3 className="py-4 text-lg font-bold dark:text-black">참가 인원</h3>
+            <p className="text-xs lg:text-base dark:text-black">{data?.projectpeople}</p>
 
-            <h3 className="py-6 text-lg font-bold dark:text-black">진행 기간</h3>
+            <h3 className="py-4 text-lg font-bold dark:text-black">진행 기간</h3>
             <p className="text-xs lg:text-base dark:text-black">{data?.date}</p>
 
-            <h3 className="py-6 text-lg font-bold dark:text-black">진행 목적</h3>
+            <h3 className="py-4 text-lg font-bold dark:text-black">진행 목적</h3>
             <p className="text-xs lg:text-base dark:text-black">{data?.detail}</p>
 
-            <h3 className="py-6 text-lg font-bold dark:text-black">담당 역할</h3>
+            <h3 className="py-4 text-lg font-bold dark:text-black">담당 역할</h3>
             {data?.projectpart.map(item => (
               <ul key={item.name} className="list-disc list-inside space-y-1">
                 <li className="py-2 dark:text-black">{item.name}</li>
@@ -151,7 +151,6 @@ export default function ProjectDetail() {
                         {item.solutiontwo && <li className="py-2">{item.solutiontwo}</li>}
                         {item.solutionthree && <li className="py-2">{item.solutionthree}</li>}
                         </ul>
-                        {/* solutiontwo, three 있을 경우만 보여지도록 조건부 렌더링 추가. */}
                       </section>
                       <section className="py-4">
                         <h1 className="font-bold py-1">결과</h1>
@@ -164,7 +163,6 @@ export default function ProjectDetail() {
                     </AccordionContent>
                   </AccordionItem>
                 ))}
-                {/* 스타일 수정 필요 */}
               </div>
             </Accordion>
           </section>

@@ -21,7 +21,7 @@ export default function Introduce() {
         </section>
         <section className="mx-10 md:w-full lg:w-7/12">
           <h1 className="text-base font-bold py-4 lg:text-xl">
-            <span className="inline-block text-red-500">
+            <span className="inline-block text-blue-500 font-bold">
               <Typewriter
                 options={{
                   strings: [

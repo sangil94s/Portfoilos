@@ -122,7 +122,7 @@
   },
   "Compact-Machine": {
     "title": "Compact-Machine",
-    "detail": "레거시의 사례를 참고하며 장기적으론 ERP를 목표로 진행한 백오피스 프로젝트입니다.",
+    "detail": "레거시를 참고, 장기적으론 ERP를 목표로 진행한 백오피스 프로젝트입니다.",
     "features": [
       {
         "name": "한국어, 영어 변경 - I18next로 언어 전환이 가능하도록 구현"
@@ -136,18 +136,18 @@
         "AccordionTrigger": "API 문서화 부재로 소통 지연 발생",
         "issue": "API 문서화 부재하여 소통에 지연 발생한 사례가 존재",
         "solution": "개발팀 간 원활한 소통을 위해 문서화가 필요하다 판단하여 먼저 제안.",
-        "solutiontwo": "팀 내부에서 문서화에 대해 긍정적이나 Swagger과 Notion 중 뭘 선택할 건지에 대한 차이가 존재.",
+        "solutiontwo": "팀에선 문서화에 대해 긍정적이나 Swagger/Notion 중 의견 차이가 존재.",
         "solutionthree": "선정된 서비스로 백엔드를 병행하는 겸 문서화/최신화를 전담하겠다 제안.",
         "result": "Notion 사용으로 결정된 후 필수 값, 요청 값 등 작성 → PDF로 팀과 공유/최신화 전담",
-        "resulttwo": "",
+        "resulttwo": "이후 진행한 NEW APEHEX 프로젝트에서도 동일한 형태로 문서화하며 프로세스 정착",
         "resultthree": ""
       },
       {
         "AccordionTrigger": "레거시 성능 이슈를 Compact-Machine에서 개선 건",
-        "issue": "Performance 탭 기준 LCP 약 30초, 리소스 요청 1,400개 발생, Lighthouse NO_FCP 등 성능 이슈로 실 사용자의 관련 언급 지속",
-        "solution": "loadable-component로 코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 부재한 부분 개선",
-        "solutiontwo": "Log Page에 GET API에 기존에 없던 max-age=300로 캐싱을 적용",
-        "solutionthree": "기존에 없던 try/catch로 예외 처리 추가, 예상외 상황에서 PM2가 계속 재시작 하는 기존 사례 개선",
+        "issue": "Performance 탭 기준 LCP 약 30초/리소스 요청 1,400개 발생/Lighthouse NO_FCP 등 성능 이슈로 실 사용자와 내부 부서에서 언급 지속",
+        "solution": "loadable-component로 코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 추가",
+        "solutiontwo": "Log Page의 GET API에 기존에 없던 max-age=300로 캐싱을 적용",
+        "solutionthree": "기존에 없던 try/catch로 예외 처리 추가, PM2가 계속 재시작 하는 기존 사례 개선",
         "result": "LCP 1초 이하, 리소스 요청 50개 미만, Lighthouse를 Desktop 3회 평균 76점으로 성능 개선",
         "resulttwo": "MVP 배포 후, 서비스의 주 사용부서의 팀장을 통해 팀 내부에서 7개월간 속도 관련 불만 0건 유지",
         "resultthree": "이후 주 사용부서에 요청에 따라 추가 기능 구현과, 모바일 반응형 개선 진행"
@@ -191,16 +191,16 @@
         "image": "/skill/gcp.png"
       }
     ],
-    "projectpeople": "디자이너 1명, PM 1명, HW 3명, SW 2명 중 풀스택 웹 개발 전담",
+    "projectpeople": "PM 1명, HW 2명, SW 2명 중 풀스택 웹 개발 과 GCP 배포 전담",
     "projectpart": [
       {
         "name": "유일한 풀스택 개발 담당, 기획부터 참가하여 MVP 오픈 후 추가 기능 구현"
       },
       {
-        "name": "이전 프로젝트에 미 사용한 Zustand, i18next 등 사용, 여러 국가 서비스 대비"
+        "name": "이전 프로젝트에 미 사용한 Zustand, i18next 등 사용, 다국가 서비스 대비"
       },
       {
-        "name": "팀과 협의 후 이전에 없던 API 문서화를 Notion로 생성, 문서화 정착 주도"
+        "name": "팀과 협의 후 API 문서화를 Notion로 생성/최신화 문서화 정착 주도"
       }
     ],
     "skill": [

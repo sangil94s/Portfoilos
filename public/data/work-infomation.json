@@ -1,13 +1,13 @@
 {
   "companytitle": "킴스인더스트리",
-  "companysmalldescription": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다",
+  "companysmalldescription": "수제 담배를 만드는 기계를 제조 및 판매하는 기업입니다",
   "companydate": "2022.12 - 2025.03 [약 2년 4개월]",
   "companyposition": "R&D 소프트웨어 2팀 프론트엔드 개발자",
   "companyInfo": "수제 담배를 만드는 기계를 제조 및 판매하는 B2B 기업입니다.",
-  "performanceone": "기존 EJS + Jquery에서 React + Typescript로 전환을 주도, 이후 프로젝트 모두 React 환경으로 진행하며 정착.",
+  "performanceone": "기존 EJS + Jquery → React + Typescript로 전환을 주도, 이후 프로젝트 모두 React 환경으로 진행.",
   "performancetwo": "React, Typescript, Express, GCP 기반으로 MVP 서비스를 개발하고, 배포 및 유지 보수까지 직접 수행.",
-  "performancethree": "혼용된 (전역 CSS 3만 줄 + Bootstrap + 인라인 스타일) 환경을 TailwindCSS + DaisyUI로 통일하여 유지 보수성을 향상.",
-  "performancefour": "기존 디자인 가이드에 사용 색상 정보가 누락되어 디자이너와 협의하여 HEX 코드를 가이드에 반영 후, 이후 프로젝트에서 반영.",
+  "performancethree": "혼용된 스타일 (전역 CSS 3만 줄 + Bootstrap + 인라인 스타일) 환경을 TailwindCSS + DaisyUI로 통일.",
+  "performancefour": "기존 디자인 가이드에 사용 색상 정보가 누락되어 디자이너와 협의하여 HEX 코드를 가이드에 반영 후, 이후 프로젝트에 정착.",
   "performancefive": "API 문서화가 없어 직접 제안했고, 팀과 Swagger 과 Notion 중 검토 후 Notion을 도입, 이후 2개 프로젝트에 정착.",
   "companylogo": "/work/logos.jpg"
 }

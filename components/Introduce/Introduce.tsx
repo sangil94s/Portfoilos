@@ -12,9 +12,9 @@ export default function Introduce() {
           <Image
             src={'/Profile.jpeg'}
             alt="증명 사진 배치 지역"
-            width={300}
-            height={300}
-            className="rounded-md"
+            width={250}
+            height={250}
+            className="rounded-lg"
           />
         </section>
         <section className="mx-10 md:w-full lg:w-7/12">

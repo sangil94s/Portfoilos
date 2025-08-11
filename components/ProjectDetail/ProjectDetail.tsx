@@ -146,18 +146,18 @@ export default function ProjectDetail() {
                       </section>
                       <section className="py-4">
                         <h1 className="font-bold py-1">해결</h1>
-                        <ul className='list-disc list-inside'>
-                        <li className="py-2">{item.solution}</li>
-                        {item.solutiontwo && <li className="py-2">{item.solutiontwo}</li>}
-                        {item.solutionthree && <li className="py-2">{item.solutionthree}</li>}
+                        <ul className="list-disc list-inside">
+                          <li className="py-2">{item.solution}</li>
+                          {item.solutiontwo && <li className="py-2">{item.solutiontwo}</li>}
+                          {item.solutionthree && <li className="py-2">{item.solutionthree}</li>}
                         </ul>
                       </section>
                       <section className="py-4">
                         <h1 className="font-bold py-1">결과</h1>
-                        <ul className='list-disc list-inside'>
-                        <li className="py-2">{item.result}</li>
-                        {item.resulttwo && <li className="py-2">{item.resulttwo}</li>}
-                        {item.resultthree && <li className="py-2">{item.resultthree}</li>}
+                        <ul className="list-disc list-inside">
+                          <li className="py-2">{item.result}</li>
+                          {item.resulttwo && <li className="py-2">{item.resulttwo}</li>}
+                          {item.resultthree && <li className="py-2">{item.resultthree}</li>}
                         </ul>
                       </section>
                     </AccordionContent>

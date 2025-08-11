@@ -1,8 +1,6 @@
 // 자기소개 파트
 'use client';
 import Typewriter from 'typewriter-effect';
-import ResumeDownload from './Button/ResumeDownload';
-import MailButton from './Button/MailButton';
 import Image from 'next/image';
 
 // 추가 고려 - 좌측에 이미지?
@@ -47,10 +45,6 @@ export default function Introduce() {
           <p className="font-bold text-sm py-1">
             여러 부분에 대해 제안하고 실행하여 더 개선된 서비스나 개발 문화 발전에 기여하고자 합니다
           </p>
-          <div className="grid grid-cols-2 justify-items-center gap-2 py-4">
-            <ResumeDownload />
-            <MailButton />
-          </div>
         </section>
       </div>
     </>

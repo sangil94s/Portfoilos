@@ -17,8 +17,8 @@ const texts: Record<(typeof images)[number], string> = {
   '/project/compact-lcp.png': '↑ Compact-Machine - 관리자 페이지 LCP',
   '/project/apehex-resource.png': '↑ APEHEX - 관리자 페이지 리소스 요청 - 약 1,400건',
   '/project/compact-resources.png': '↑ Compact-Machine - 관리자 페이지 리소스 요청 - 약 40건',
-  '/project/compact-api-document-1.png': "↑ Compact-Machine - API 문서화 당시 사용 사례",
-  '/project/compact-api-document-2.png': "↑ Compact-Machine - API 문서화 당시 사용 사례",
+  '/project/compact-api-document-1.png': '↑ Compact-Machine - API 문서화 당시 사용 사례',
+  '/project/compact-api-document-2.png': '↑ Compact-Machine - API 문서화 당시 사용 사례',
 };
 export default function CompactCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);

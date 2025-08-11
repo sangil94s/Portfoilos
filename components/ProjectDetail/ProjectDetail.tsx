@@ -82,7 +82,7 @@ export default function ProjectDetail() {
             ))}
             {data?.deploy?.length !== 0 && (
               <>
-                <h3 className="py-4 text-lg font-bold dark:text-black">Link</h3>
+                <h3 className="py-4 text-lg font-bold dark:text-black">관련 링크</h3>
 
                 <div className="flex gap-2 mt-2">
                   <Link

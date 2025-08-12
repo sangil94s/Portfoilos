@@ -1,16 +1,21 @@
-# 포트폴리오 프로젝트
+# 📌 포트폴리오 프로젝트
 
-### Skill
+Next.js + TypeScript + TailwindCSS + Shadcn UI로 제작한 개인 포트폴리오 사이트입니다.
+
+---
+
+### 🚀  기술 스택
 
 - Next.js App Router : 15.3.5
 - React 19
 - Typescript
 - TailwindCSS
 - Shadcn
+- framer-motion
 
 ---
 
-### Link
+### 🌐 링크
 
 - [바로가기](https://www.fronthan.dev/)
 
@@ -18,7 +23,7 @@
 
 ---
 
-### 설치와 실행
+### ⚙ 설치와 실행
 
 > npm install
 

@@ -5,9 +5,9 @@ import { CoreCapabilitiesType } from '@/types/typeInfomation';
 export default function CoreCapabilities() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center gap-4 m-2 lg:gap-8 lg:flex-row">
+      <div className="flex flex-col justify-center items-center gap-4 m-2 w-full lg:gap-10 lg:flex-row">
         {data?.core.map((item: CoreCapabilitiesType) => (
-          <section key={item.id} className="w-full lg:h-[400px]">
+          <section key={item.id} className="lg:h-[400px]">
             <h1 className="text-center text-xl font-bold p-4">{item.title}</h1>
             <h4 className="text-center text-xs font-bold p-2">{item.subtitle}</h4>
             <p className="p-4 text-sm">{item.description}</p>

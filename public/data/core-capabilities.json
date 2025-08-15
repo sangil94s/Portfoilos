@@ -2,10 +2,10 @@
   "core": [
     {
       "id": 1,
-      "title": "제안과 정착 주도",
+      "title": "문제 해결 및 개선 주도",
       "subtitle": "먼저 문제를 찾고 개선을 제안 또는 도입을 주도",
-      "description": "레거시 개선, UI/UX 개선, API 문서화 등에서 문제를 찾고 개선을 주도",
-      "descriptiontwo": "TailwindCSS + DaisyUI 도입, 디자이너 협업 후 가이드 개선, API 문서화 체계 제안 등",
+      "description": "레거시 개선, UI/UX 불편 요소 식별 → 구조적 리팩토링 및 기술 도입 제안",
+      "descriptiontwo": "API 문서화, 디자인 가이드 개선 등 지속 가능한 작업 환경 구축에 기여",
       "descriptionthree": ""
     },
     {
@@ -18,11 +18,11 @@
     },
     {
       "id": 3,
-      "title": "풀스택 실무",
+      "title": "프론트엔드 중심의 풀스택 업무 경험",
       "subtitle": "프론트엔드와 백엔드를 개발을 전담하며 진행",
       "description": "React, Typescript, TailwindCSS, Express, GCP 기반의 프로젝트 개발 및 유지 보수",
-      "descriptiontwo": "Express, SQL, GCP를 학습과 동시에 프로젝트에 즉각 적용하며 개발",
-      "descriptionthree": ""
+      "descriptiontwo": "Express + GCP + SQL 를 학습과 동시에 프로젝트에 즉각 적용.",
+      "descriptionthree": "약 10인 규모 개발팀 환경에서 기획/개발/배포 전과정 주도적 수행"
     }
   ]
 }

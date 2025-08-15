@@ -1,16 +1,16 @@
 {
   "AFO": {
     "title": "AFO",
-    "detail": "레거시의 EJS → React 변경 + 성능 이슈 개선 + UI/UX 개선 목적의 프로젝트",
+    "detail": "EJS → React 변경 + 성능 이슈 개선 + UI/UX 개선 목적의 프로젝트",
     "features": [
       {
-        "name": "유효성 검사 - React-Hook-Form과 Joi로 실시, 필수값 누락을 방지"
+        "name": "유효성 검사 - React-Hook-Form과 Joi로 각각 실시, 필수값 누락 방지 목적"
       },
       {
         "name": "반응형 - FHD 해상도, 아이폰 14 Pro Max 기준으로 기기별 최적화"
       },
       {
-        "name": "UX 통합 - UX 미 일치 문제를 CSV 다운로드 등 4개 기능 만 배치하며 개선"
+        "name": "UI/UX 통합 - 미 일치 문제를 CSV 다운로드 등 4개 기능 + UI를 표 형태로 통합하여 개선"
       }
     ],
     "troubleshootings": [

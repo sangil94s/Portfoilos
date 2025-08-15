@@ -106,28 +106,28 @@ export default function ProjectDetail() {
         </aside>
 
         <main className="lg:w-2/3 w-full space-y-6">
-          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
+          <section className="lg:w-[640px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">기술 선정 사유</h3>
             {data?.skill?.map(skills => (
               <ul key={skills.name} className="list-disc list-inside space-y-1">
                 <h4 className="font-bold dark:text-black">{skills.name}</h4>
-                <li className="py-2 dark:text-black">{skills.description}</li>
+                <li className="py-4 dark:text-black">{skills.description}</li>
               </ul>
             ))}
           </section>
 
-          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
+          <section className="lg:w-[640px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">주요 기능</h3>
             <ul className="list-disc list-inside space-y-1">
               {data?.features.map(item => (
-                <li className="py-2 dark:text-black" key={item.name}>
+                <li className="py-4 dark:text-black" key={item.name}>
                   {item.name}
                 </li>
               ))}
             </ul>
           </section>
 
-          <section className="lg:w-[600px] lg:h-max bg-gray-50 p-4 rounded-md">
+          <section className="lg:w-[640px] lg:h-max bg-gray-50 p-4 rounded-md">
             <h3 className="text-lg font-bold py-2 dark:text-black">
               문제 발생과 해결 {title === 'AFO' && '- AFO'}{' '}
               {title === 'Compact-Machine' && '- Compact-Machine'}

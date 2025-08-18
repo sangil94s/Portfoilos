@@ -5,7 +5,7 @@ import DarkMode from './DarkMode';
 export default function ButtonGroup() {
   return (
     <>
-      <div className="border border-slate-300 rounded-xl fixed right-12 bottom-10">
+      <div className="border border-slate-300 rounded-xl fixed right-12 bottom-10 dark:bg-white">
         <section>
           <DarkMode />
         </section>

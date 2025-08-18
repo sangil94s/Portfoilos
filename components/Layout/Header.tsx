@@ -7,7 +7,7 @@ export default function Headers() {
   const pathname = usePathname();
   return (
     <>
-      <header className="fixed z-40 w-full h-10 mb-2 bg-white flex flex-row justify-between">
+      <header className="fixed z-40 w-full h-10 mb-2 flex flex-row justify-between">
         <Link href="/">
           <h1 className="p-1 text-xl font-bold dark:text-blue-500">Fronthan.dev</h1>
         </Link>

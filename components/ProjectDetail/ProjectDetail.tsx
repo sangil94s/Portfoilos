@@ -43,7 +43,7 @@ export default function ProjectDetail() {
             {data?.thumbnailImage && (
               <Image
                 src={data?.thumbnailImage}
-                width={200}
+                width={280}
                 height={100}
                 alt="프로젝트 썸네일 이미지"
                 className="m-auto"

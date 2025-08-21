@@ -1,7 +1,7 @@
 {
   "AFO": {
     "title": "AFO",
-    "detail": "EJS → React 변경 + 성능 이슈 개선 + UI/UX 개선 목적의 프로젝트",
+    "detail": "기존 백오피스 EJS → React 로 재구축 + UI/UX 개선 목적의 프로젝트",
     "features": [
       {
         "name": "유효성 검사 - React-Hook-Form과 Joi로 각각 실시, 필수값 누락 방지 목적"
@@ -99,12 +99,15 @@
       },
       {
         "name": "디자인 가이드 (AI 파일)에 사용 색상 정보가 누락, 협의 후 HEX 코드 추가"
+      },
+      {
+        "name": "GCP Compute Engine에 Nginx와 PM2로 프론트/백엔드 무중단 배포 담당"
       }
     ],
     "skill": [
       {
         "name": "TailwindCSS + DaisyUI",
-        "description": "레거시의 인라인 스타일 + Bootstrap + 전역 CSS 혼용 사례 개선 목적"
+        "description": "레거시의 인라인 스타일 + Bootstrap + 약 3만 줄 CSS 혼용 개선 목적"
       },
       {
         "name": "React-Hook-Form/Joi",
@@ -122,7 +125,7 @@
   },
   "Compact-Machine": {
     "title": "Compact-Machine",
-    "detail": "레거시를 참고, 한국과 외국에서 사용하는 ERP를 목표로 한 백오피스입니다.",
+    "detail": "내부 백오피스로 출발하나 점차 외국 고객사까지 사용하는 서비스를 목표로 한 백오피스입니다.",
     "features": [
       {
         "name": "한국어, 영어 변경 - I18next로 언어 전환이 가능하도록 구현"
@@ -145,8 +148,8 @@
       {
         "AccordionTrigger": "레거시 성능 이슈 → Compact-Machine에서 개선 건",
         "issue": "Performance 탭 기준 LCP 약 30초/리소스 요청 1,400개 발생/Lighthouse NO_FCP 등 성능 이슈로 실 사용자와 내부 부서에서 언급 지속",
-        "solution": "loadable-component로 코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 추가",
-        "solutiontwo": "Log Page의 GET API에 기존에 없던 max-age=300로 캐싱을 적용",
+        "solution": "코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 추가",
+        "solutiontwo": "GET API에 없던 max-age=300로 캐싱을 적용, useQuery로 retry:5, staleTime 5분 적용하여 안정성 확보",
         "solutionthree": "기존에 없던 try/catch로 예외 처리 추가, PM2가 계속 재시작 하는 기존 사례 개선",
         "result": "LCP 1초 이하, 리소스 요청 50개 미만, Lighthouse를 Desktop 3회 평균 76점으로 개선",
         "resulttwo": "MVP 배포 후, 주 사용부서 팀장을 통해 팀 내부에서 7개월간 속도 관련 불만 0건 유지",
@@ -201,6 +204,9 @@
       },
       {
         "name": "팀과 협의 후 API 문서화를 Notion로 생성/최신화 문서화 정착 주도"
+      },
+      {
+        "name": "GCP Compute Engine에 Nginx와 PM2로 프론트/백엔드 무중단 배포 담당"
       }
     ],
     "skill": [
@@ -303,15 +309,15 @@
     "skill": [
       {
         "name": "Next.js",
-        "description": "기존 Express로 API 작성 → Next.js로 풀스택 개발과 App Router 학습 목적"
+        "description": "기존 Express로만 API 작성 → Next.js로 풀스택 개발과 App Router 학습 목적"
       },
       {
         "name": "Supabase",
-        "description": "미 사용해본 Supabase를 사용하여 데이터를 저장하는 목적으로만 사용"
+        "description": "미 사용해본 Supabase로 MySQL 대신 데이터를 저장하는 목적으로만 사용"
       },
       {
         "name": "Prisma",
-        "description": "SQL Query로 진행한 기존 사례와 달리 새로운 ORM을 학습하기 위함."
+        "description": "SQL Query로 진행한 AFO, Compact-Machine와 달리 신규 ORM 학습 목적."
       }
     ],
     "thumbnailImage": "/project/steamrader-main.png",

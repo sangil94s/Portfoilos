@@ -28,7 +28,7 @@ export default function ProjectCard() {
               <CardDescription className="py-1">기간: {item.date}</CardDescription>
               <CardDescription className="py-1 font-bold">인원: {item.teamcount}</CardDescription>
               <CardDescription className="py-1 font-bold">담당: {item.parts}</CardDescription>
-              <CardDescription className="py-2 text-black dark:text-slate-300">
+              <CardDescription className="py-2 text-black dark:text-blue-300 font-bold">
                 {item.description}
               </CardDescription>
               <div className="flex flex-row justify-center gap-2">

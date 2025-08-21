@@ -5,8 +5,8 @@
       "title": "문제 해결 및 개선 주도",
       "subtitle": "먼저 문제를 찾고 개선을 제안 또는 도입을 주도",
       "description": "레거시 개선, UI/UX 불편 요소 식별 → 구조적 리팩토링 및 기술 도입 제안",
-      "descriptiontwo": "API 문서화, 디자인 가이드 개선 등 지속 가능한 작업 환경 구축에 기여",
-      "descriptionthree": ""
+      "descriptiontwo": "Notion으로 API 문서화, 디자인 가이드 개선 등 지속 가능한 작업 환경 구축에 기여",
+      "descriptionthree": "Git Flow 도입 등 개발 문화에 대한 변화를 제안/주도"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "subtitle": "레거시 (APEHEX) → 컴팩트머신 프로젝트에서 개선",
       "description": "LCP 47초 → 1초, 리소스 1400개 → 50개, Lighthouse NO_FCP → 76점 개선",
       "descriptiontwo": "React + 코드 스플리팅 + 캐싱 도입 등으로 레거시 대비 성능 개선",
-      "descriptionthree": "MVP 배포 후 7개월간 주 사용부서에서 속도 관련 불만 0건 유지"
+      "descriptionthree": "내부 백오피스 배포 후 7개월간 주 사용부서에서 속도 관련 불만 0건 유지"
     },
     {
       "id": 3,

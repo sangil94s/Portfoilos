@@ -4,7 +4,7 @@ Next.js + TypeScript + TailwindCSS + Shadcn UI로 제작한 개인 포트폴리�
 
 ---
 
-### 🚀  기술 스택
+### 🚀 기술 스택
 
 - Next.js App Router : 15.3.5
 - React 19

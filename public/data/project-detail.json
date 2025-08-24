@@ -154,6 +154,16 @@
         "result": "LCP 1초 이하, 리소스 요청 50개 미만, Lighthouse를 Desktop 3회 평균 76점으로 개선",
         "resulttwo": "MVP 배포 후, 주 사용부서 팀장을 통해 팀 내부에서 7개월간 속도 관련 불만 0건 유지",
         "resultthree": "이후 주 사용부서에 요청에 따라 추가 기능 구현과, 모바일 반응형 개선 진행"
+      },
+      {
+        "AccordionTrigger": "레거시 단일 파일 약 2,000줄 파일 → Compact-Machine에서 100줄 이하로 개선 건",
+        "issue": "레거시의 관리자 페이지 파일은 코드 분리 없이 약 2,000줄로 코드 파악과 유지 보수 난이도 높은 상황 지속",
+        "solution": "Header/Footer 등 공통 컴포넌트를 우선 분리 후 프로젝트 전역에 적용",
+        "solutiontwo": "이후 각 기능 별(지도/표/그래프) 등 컴포넌트를 분리 후 관리자 페이지에 Import",
+        "solutionthree": "",
+        "result": "관리자 페이지 단일 파일 기준 2,000줄 → 80줄 이하로 개선하며 유지 보수 효율성 확보",
+        "resulttwo": "약 16개의 기능별 컴포넌트를 분리 후 /admin에서 보는 파일에 Import 하여 유지 보수 효율성 확보",
+        "resultthree": ""
       }
     ],
     "projectskill": [

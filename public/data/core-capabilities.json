@@ -12,7 +12,7 @@
       "id": 2,
       "title": "실전 기반 성능 개선 경험",
       "subtitle": "레거시 (APEHEX) → 컴팩트머신 프로젝트에서 개선",
-      "description": "LCP 47초 → 1초, 리소스 1400개 → 50개, Lighthouse NO_FCP → 76점 개선",
+      "description": "LCP 30초 → 1초, 리소스 1400개 → 50개, Lighthouse NO_FCP → 76점 개선",
       "descriptiontwo": "React + 코드 스플리팅 + 캐싱 도입 등으로 레거시 대비 성능 개선",
       "descriptionthree": "내부 백오피스 배포 후 7개월간 주 사용부서에서 속도 관련 불만 0건 유지"
     },

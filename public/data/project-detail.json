@@ -146,7 +146,7 @@
         "resultthree": ""
       },
       {
-        "AccordionTrigger": "레거시 성능 이슈 → Compact-Machine에서 개선 건",
+        "AccordionTrigger": "성능 이슈 → Compact-Machine에서 개선 건",
         "issue": "Performance 탭 기준 LCP 약 30초/리소스 요청 1,400개 발생/Lighthouse NO_FCP 등 성능 이슈로 실 사용자와 내부 부서에서 언급 지속",
         "solution": "코드 스플리팅 도입, 지도/표 등 기능별 컴포넌트 분리, Zustand로 상태 관리 등 추가",
         "solutiontwo": "GET API에 없던 max-age=300로 캐싱을 적용, useQuery로 retry:5, staleTime 5분 적용하여 안정성 확보",
@@ -156,13 +156,23 @@
         "resultthree": "이후 주 사용부서에 요청에 따라 추가 기능 구현과, 모바일 반응형 개선 진행"
       },
       {
-        "AccordionTrigger": "레거시 단일 파일 약 2,000줄 파일 → Compact-Machine에서 100줄 이하로 개선 건",
+        "AccordionTrigger": "단일 파일 약 2,000줄 파일 → Compact-Machine에서 100줄 이하로 개선 건",
         "issue": "레거시의 관리자 페이지 파일은 코드 분리 없이 약 2,000줄로 코드 파악과 유지 보수 난이도 높은 상황 지속",
         "solution": "Header/Footer 등 공통 컴포넌트를 우선 분리 후 프로젝트 전역에 적용",
         "solutiontwo": "이후 각 기능 별(지도/표/그래프) 등 컴포넌트를 분리 후 관리자 페이지에 Import",
         "solutionthree": "",
         "result": "관리자 페이지 단일 파일 기준 2,000줄 → 80줄 이하로 개선하며 유지 보수 효율성 확보",
         "resulttwo": "약 16개의 기능별 컴포넌트를 분리 후 /admin에서 보는 파일에 Import 하여 유지 보수 효율성 확보",
+        "resultthree": ""
+      },
+      {
+        "AccordionTrigger": "예외 처리 부재 개선한 건",
+        "issue": "레거시의 경우 별도 예외 처리 부재로 PM2에 의해 프로젝트가 재 시작되는 사례가 발생",
+        "solution": "Compact-Machine에서 API에 try/catch/finally를 도입.",
+        "solutiontwo": "별도의 DB release()로 커넥션 반납 부분이 부재하여 finally에서 DB에 대한 커넥션 반납 진행",
+        "solutionthree": "",
+        "result": "API 예외 처리 추가로 에러가 발생 시 PM2가 무조건 재시작 하는 사례 개선",
+        "resulttwo": "API 사용 후 커넥션을 반납하여 불필요 리소스 낭비를 개선",
         "resultthree": ""
       }
     ],

@@ -53,7 +53,7 @@ export default function CompactCarousel() {
           ))}
         </div>
 
-        <p className="text-base font-bold">{currentText}</p>
+        <p className="text-base font-bold dark:text-white">{currentText}</p>
       </div>
     </>
   );
